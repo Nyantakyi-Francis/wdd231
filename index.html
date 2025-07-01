@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 231 Week 01 Assignment: Course Home Page">
+    <meta name="description" content="WDD 231 Course Home Page for Nyantakyi Francis, showcasing web development projects and skills.">
     <meta name="author" content="Nyantakyi Francis">
-    <title>WDD 231 | Course Home Page</title>
-    <!-- Link to the custom CSS file -->
+    <title>WDD 231 | Course Home Page | Nyantakyi Francis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- Header Section -->
     <header class="header">
         <div class="container header-content">
-           
+            
             <div class="site-branding">
                 <svg class="site-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
@@ -21,27 +21,23 @@
                 <span class="site-name">My Courses</span>
             </div>
 
-            <!-- Hamburger Menu for Mobile -->
             <button id="hamburger" class="hamburger-menu" aria-label="Toggle navigation">
                 <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
 
-            <!-- Navigation Menu -->
             <nav id="main-nav" class="main-nav">
                 <a href="#" class="nav-link current-page">Home</a>
-                <a href="#Chamber Project.html" target="_blank" class="nav-link">Chamber Project</a>
-                <a href="#Final Project.html" target="_blank" class="nav-link">Final Project</a>
+                <a href="chamber-project.html" target="_blank" class="nav-link">Chamber Project</a>
+                <a href="final-project.html" target="_blank" class="nav-link">Final Project</a>
             </nav>
         </div>
     </header>
 
-    <!-- Main Content Area -->
     <main class="container main-content">
-        <h1 class="page-title">Home</h1>
+        <h1 class="page-title">Welcome to My Course Home Page</h1>
 
-        <!-- About Me Section -->
         <section class="about-me-section">
             <div class="about-me-text">
                 <h2 class="section-title">About Me</h2>
@@ -49,52 +45,45 @@
                 </p>
             </div>
             <div class="student-photo-container">
-               
-                <img src="images/dp.jpg" alt="Student Photo" class="student-photo">
+                
+                <img src="images/dp.jpg" alt="Portrait of Nyantakyi Francis" class="student-photo">
             </div>
         </section>
 
-        <!-- Web Certificate Courses Section -->
         <section class="courses-section">
             <h2 class="section-title">Web Certificate Courses</h2>
 
-            <!-- Filter Buttons -->
             <div class="filter-buttons">
                 <button id="filter-all" class="filter-button active">All Courses</button>
                 <button id="filter-wdd" class="filter-button">WDD Courses</button>
                 <button id="filter-cse" class="filter-button">CSE Courses</button>
             </div>
 
-            <!-- Course List Container -->
             <div id="course-list" class="course-list-grid">
-                <!-- Course cards will be dynamically inserted here by JavaScript -->
-            </div>
+                </div>
 
-            <!-- Total Credits Display -->
             <p class="total-credits-display">
                 The total credits for course listed above is: <span id="total-credits" class="total-credits-value">0</span>
             </p>
         </section>
     </main>
 
-    <!-- Footer Section -->
     <footer class="footer">
         <div class="container footer-content">
-            <!-- Social Media Links -->
             <div class="social-media-links">
                 <a href="https://github.com/Nyantakyi-Francis/" target="_blank" aria-label="GitHub">
                     <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.086 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.49.998.108-.775.419-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1-.322 3.3-1.23.963-.265 1.98-.397 3-.397.005 0 0 0 0 0 1.02.001 2.037.132 3 .397 2.3 1.078 3.295 1.23 3.295 1.23.645 1.653.24 2.873.105 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"/>
+                        <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.087-.744.084-.729.084-.729 1.205.086 1.838 1.238 1.838 1.238 1.07 1.835 2.809 1.305 3.49.998.108-.775.419-1.305.762-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1-.322 3.3-1.23.963-.265 1.98-.397 3-.397.005 0 0 0 0 0 1.02.001 2.037.132 3 .397 2.3 1.078 3.295 1.23 3.295 1.23.645 1.653.24 2.873.105 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.805 5.625-5.475 5.92.43.37.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12z"></path>
                     </svg>
                 </a>
                 <a href="https://www.linkedin.com/in/nyantakyi-francis-603497278/" target="_blank" aria-label="LinkedIn">
                     <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.23 0H1.77C.79 0 0 .77 0 1.73v20.54c0 .96.79 1.73 1.77 1.73h20.46c.98 0 1.77-.77 1.77-1.73V1.73c0-.96-.79-1.73-1.77-1.73zM7.15 20.41H3.59V9H7.15v11.41zM5.37 7.42c-1.2 0-2.17-.95-2.17-2.12s.97-2.12 2.17-2.12 2.17.95 2.17 2.12-.97 2.12-2.17 2.12zm15.04 12.99h-3.56V14.5c0-1.4-.5-2.36-1.76-2.36-1.28 0-2.04.86-2.38 1.7V20.4h-3.56V9h3.56v1.54s.48-1.38 2.05-1.38c2.24 0 3.9 1.43 3.9 4.5V20.4z"/>
+                        <path d="M22.23 0H1.77C.79 0 0 .77 0 1.73v20.54c0 .96.79 1.73 1.77 1.73h20.46c.98 0 1.77-.77 1.77-1.73V1.73c0-.96-.79-1.73-1.77-1.73zM7.15 20.41H3.59V9H7.15v11.41zM5.37 7.42c-1.2 0-2.17-.95-2.17-2.12s.97-2.12 2.17-2.12 2.17.95 2.17 2.12-.97 2.12-2.17 2.12zm15.04 12.99h-3.56V14.5c0-1.4-.5-2.36-1.76-2.36-1.28 0-2.04.86-2.38 1.7V20.4h-3.56V9h3.56v1.54s.48-1.38 2.05-1.38c2.24 0 3.9 1.43 3.9 4.5V20.4z"></path>
                     </svg>
                 </a>
-                <a href="https://x.com/nyantakyif67049?s=21" target="_blank" aria-label="Twitter">
+                <a href="https://twitter.com/your-twitter-handle" target="_blank" aria-label="Twitter">
                     <svg class="social-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.186a4.953 4.953 0 0 0-8.464 4.544c-4.155-.208-7.828-2.2-10.3-5.25a4.935 4.935 0 0 0-.665 2.477c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.23-.616v.06c0 2.38 1.69 4.374 3.946 4.827a4.994 4.994 0 0 1-2.227.084c.623 1.956 2.445 3.38 4.6 3.42a9.97 9.97 0 0 1-6.173 2.138c-.407 0-.81-.024-1.212-.07a14.04 14.04 0 0 0 7.55 2.213c9.056 0 14.01-7.502 14.01-14.01V4.76c.76-.546 1.413-1.24 1.936-2.036z"/>
+                        <path d="M23.953 4.57a10 10 0 0 1-2.825.775 4.958 4.958 0 0 0 2.163-2.723c-.951.555-2.005.959-3.127 1.186a4.953 4.953 0 0 0-8.464 4.544c-4.155-.208-7.828-2.2-10.3-5.25a4.935 4.935 0 0 0-.665 2.477c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 0 1-2.23-.616v.06c0 2.38 1.69 4.374 3.946 4.827a4.994 4.994 0 0 1-2.227.084c.623 1.956 2.445 3.38 4.6 3.42a9.97 9.97 0 0 1-6.173 2.138c-.407 0-.81-.024-1.212-.07a14.04 14.04 0 0 0 7.55 2.213c9.056 0 14.01-7.502 14.01-14.01V4.76c.76-.546 1.413-1.24 1.936-2.036z"></path>
                     </svg>
                 </a>
             </div>
@@ -103,7 +92,6 @@
         </div>
     </footer>
 
-    <!-- Link to the custom JavaScript file -->
     <script src="scripts/script.js" defer></script>
 </body>
 </html>
