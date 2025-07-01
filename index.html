@@ -1,142 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-initial-scale=1.0">
-    <meta name="description" content="WDD
-231 Course Home Page for Nyantakyi Francis, showcasing web development projects
-and skills.">
-    <meta name="author" content="Nyantakyi
-Francis">
-    <title>WDD 231 | Course Home Page |
-Nyantakyi Francis</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com"
-crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 Course Home Page for Nyantakyi Francis, showcasing web development projects and skills.">
+    <meta name="author" content="Nyantakyi Francis">
+    <title>WDD 231 | Course Home Page | Nyantakyi Francis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
     <header class="header">
-        <div class="container
-header-content">
-            
+        <div class="container header-content">
             <div class="site-branding">
-                <svg
-class="site-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    
-    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10
-5 10-5"></path>
+                <svg class="site-logo" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                 </svg>
-                <span
-class="site-name">My Courses</span>
+                <span class="site-name">My Courses</span>
             </div>
- 
-            <button id="hamburger"
-class="hamburger-menu" aria-label="Toggle navigation">
-                <svg
-class="hamburger-icon" fill="none" stroke="currentColor"
-viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    
-    <path stroke-linecap="round" stroke-linejoin="round"
-stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            <button id="hamburger" class="hamburger-menu" aria-label="Toggle navigation">
+                <svg class="hamburger-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                 </svg>
             </button>
- 
-            <nav id="main-nav"
-class="main-nav">
-                <a
-href="#" class="nav-link current-page">Home</a>
-                <a
-href="chamber-project.html" target="_blank" class="nav-link">Chamber
-Project</a>
-                <a
-href="final-project.html" target="_blank" class="nav-link">Final
-Project</a>
+            <nav id="main-nav" class="main-nav">
+                <a href="#" class="nav-link current-page">Home</a>
+                <a href="chamber-project.html" target="_blank" class="nav-link">Chamber Project</a>
+                <a href="final-project.html" target="_blank" class="nav-link">Final Project</a>
             </nav>
         </div>
     </header>
- 
-    <main class="container
-main-content">
-        <h1 class="page-title">Welcome
-to My Course Home Page</h1>
- 
+
+    <main class="container main-content">
+        <h1 class="page-title">WDD 231 Course Home Page | Nyantakyi Francis</h1> 
+
         <section class="about-me-section">
             <div class="about-me-text">
-                <h2
-class="section-title">About Me</h2>
-                <p>My
-name is Nyantakyi Francis, and I’m a web developer looking to work with
-innovative companies where I can build impactful digital experiences. I’ve
-developed and launched responsive websites for small businesses that helped
-increase their online engagement by over 40%. I recently led the redesign of a
-school website, resulting in faster load times and improved accessibility. I’m
-highly detail-oriented, a fast learner, and passionate about clean and
-efficient code. I’m confident I can bring both creativity and reliability to
-any development team
-                </p>
+                <h2 class="section-title">About Me</h2>
+                <p>My name is Nyantakyi Francis, and I’m a web developer looking to work with innovative companies where I can build impactful digital experiences. I’ve developed and launched responsive websites for small businesses that helped increase their online engagement by over 40%. I recently led the redesign of a school website, resulting in faster load times and improved accessibility. I’m highly detail-oriented, a fast learner, and passionate about clean and efficient code. I’m confident I can bring both creativity and reliability to any development team.</p>
             </div>
             <div class="student-photo-container">
-                
-                <img
-src="images/dp.jpg" alt="Portrait of Nyantakyi Francis" class="student-photo">
+                <img src="images/dp.jpg" alt="Portrait of Nyantakyi Francis" class="student-photo">
             </div>
         </section>
- 
+
+        <section class="additional-info-section">
+             <h2 class="section-title">Additional Information</h2>
+             <p>This section can be used for future content like skills, projects, or contact details.</p>
+        </section>
+
         <section class="courses-section">
-            <h2 class="section-title">Web
-Certificate Courses</h2>
- 
+            <h2 class="section-title">Web Certificate Courses</h2>
+
             <div class="filter-buttons">
-                <button
-id="filter-all" class="filter-button active">All Courses</button>
-                <button
-id="filter-wdd" class="filter-button">WDD Courses</button>
-                <button
-id="filter-cse" class="filter-button">CSE Courses</button>
+                <button id="filter-all" class="filter-button active">All Courses</button>
+                <button id="filter-wdd" class="filter-button">WDD Courses</button>
+                <button id="filter-cse" class="filter-button">CSE Courses</button>
             </div>
- 
-            <div id="course-list"
-class="course-list-grid">
-                </div>
- 
+
+            <div id="course-list" class="course-list-grid">
+            </div>
+
             <p class="total-credits-display">
-                The
-total credits for course listed above is: <span id="total-credits"
-class="total-credits-value">0</span>
+                The total credits for courses listed above is: <span id="total-credits" class="total-credits-value">0</span>
             </p>
         </section>
     </main>
- 
+
     <footer class="footer">
-        <div class="container
-footer-content">
+        <div class="container footer-content">
             <div class="social-media-links">
-                <a
-href="https://github.com/Nyantakyi-Francis/" target="_blank"
-aria-label="GitHub">
+                <a href="https://github.com/Nyantakyi-Francis/" target="_blank" aria-label="GitHub">
                     <img class="social-icon" src="images/git.jpeg" alt="GitHub icon">
                 </a>
-                <a
-href="https://www.linkedin.com/in/nyantakyi-francis-603497278/" target="_blank"
-aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/nyantakyi-francis-603497278/" target="_blank" aria-label="LinkedIn">
                     <img class="social-icon" src="images/linkdn.png" alt="LinkedIn icon">
                 </a>
-                <a
-href="https://twitter.com/your-twitter-handle" target="_blank"
-aria-label="Twitter">
+                <a href="https://twitter.com/your-twitter-handle" target="_blank" aria-label="Twitter">
                     <img class="social-icon" src="images/x.png" alt="X (formerly Twitter) icon">
                 </a>
             </div>
-            <p>&copy;
-<span id="currentyear"></span> Nyantakyi Francis, Ashanti
-Region, Ghana</p>
-            <p id="lastModified">Last
-Modification: </p>
+            <p>&copy; <span id="currentyear"></span> Nyantakyi Francis, Ashanti Region, Ghana</p>
+            <p id="lastModified">Last Modification: </p>
         </div>
     </footer>
- 
+
     <script src="scripts/script.js" defer></script>
 </body>
 </html>

@@ -277,19 +277,15 @@ section {
 .social-icon {
     width: 1.8rem;
     height: 1.8rem;
-    /* Removed fill property as it only applies to SVGs */
-    transition: filter 0.3s ease; /* Transition for the filter effect */
-    /* Adjust initial filter to make them appear slightly desaturated or a specific shade if desired */
-    filter: grayscale(100%) brightness(150%); /* Example: make them light grey initially */
+    /* The audit correctly noted that 'fill' applies to SVGs.
+       Your current CSS correctly uses 'filter' for image manipulation. */
+    transition: filter 0.3s ease;
+    filter: grayscale(100%) brightness(150%);
 }
 
 .social-icon:hover {
-    /* Use filter to change appearance on hover */
-    filter: grayscale(0%) brightness(100%); /* Example: restore full color on hover */
-    /* Or if you want a specific color tint (more advanced, often requires color calculations): */
-    /* filter: sepia(100%) hue-rotate(200deg) saturate(300%) brightness(100%); */
+    filter: grayscale(0%) brightness(100%);
 }
-
 
 /* Media Queries for Responsiveness (Larger Screens) */
 @media (min-width: 768px) {
