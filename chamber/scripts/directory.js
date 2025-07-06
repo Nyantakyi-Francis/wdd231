@@ -1,9 +1,7 @@
 // directory.js - Handles fetching and displaying member data, and view toggling
 
 document.addEventListener('DOMContentLoaded', () => {
-    // IMPORTANT: Path to members.json is now an absolute path relative to your GitHub Pages repository root.
-    // This assumes your GitHub Pages URL is like: https://nyantakyi-francis.github.io/wdd231/
-    // And your members.json is located at: wdd231/chamber/data/members.json
+   
     const url = '/wdd231/chamber/data/members.json'; 
     const memberDisplay = document.getElementById('member-display');
     const gridViewBtn = document.getElementById('grid-view-btn');
@@ -95,9 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // Only display image in grid view
             if (viewType === 'grid') {
                 const logo = document.createElement('img');
-                // IMPORTANT: Changed image path to be absolute from the GitHub Pages repository root.
-                // This path is relative to the domain root (e.g., https://nyantakyi-francis.github.io/)
-                // and includes your repository name 'wdd231'.
+
+            
                 logo.src = `/wdd231/images/${member.imagefilename}`; 
                 logo.alt = `${member.name} Logo`;
                 logo.loading = 'lazy';
