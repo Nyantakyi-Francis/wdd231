@@ -1,10 +1,10 @@
 // directory.js - Handles fetching and displaying member data, and view toggling
 
 document.addEventListener('DOMContentLoaded', () => {
-    // IMPORTANT: Ensure this path is correct relative to directory.js
-    // If directory.js is in 'wdd231/chamber/scripts/' and members.json is in 'wdd231/chamber/data/'
-    // then '../data/members.json' is the correct path.
-    const url = '../data/members.json'; 
+    // IMPORTANT: Path to members.json is relative to directory.html
+    // If directory.html is in 'wdd231/chamber/' and members.json is in 'wdd231/chamber/data/'
+    // then 'data/members.json' is the correct path.
+    const url = 'data/members.json'; 
     const memberDisplay = document.getElementById('member-display');
     const gridViewBtn = document.getElementById('grid-view-btn');
     const listViewBtn = document.getElementById('list-view-btn');
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Only display image in grid view
             if (viewType === 'grid') {
                 const logo = document.createElement('img');
-                // IMPORTANT: Adjust this path based on where your member logos are stored.
+                // IMPORTANT: This path is relative to directory.html
                 // If member logos are in 'wdd231/images/', use `../images/${member.imagefilename}`
                 // If member logos are in 'wdd231/chamber/images/', use `images/${member.imagefilename}`
                 // Based on your directory.html, the main logo is '../images/my-logo.png', so assuming member logos are there too.
