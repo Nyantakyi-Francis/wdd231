@@ -1,7 +1,7 @@
 // directory.js - Handles fetching and displaying member data, and view toggling
 
 document.addEventListener('DOMContentLoaded', () => {
-    const url = 'data/members.json'; // Path to your JSON file
+    const url = '/data/members.json'; // Path to your JSON file
     const memberDisplay = document.getElementById('member-display');
     const gridViewBtn = document.getElementById('grid-view-btn');
     const listViewBtn = document.getElementById('list-view-btn');
