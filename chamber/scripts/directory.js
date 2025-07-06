@@ -1,10 +1,10 @@
 // directory.js - Handles fetching and displaying member data, and view toggling
 
 document.addEventListener('DOMContentLoaded', () => {
-    // IMPORTANT: Path to members.json is relative to directory.html
-    // If directory.html is in 'wdd231/chamber/' and members.json is in 'wdd231/chamber/data/'
-    // then 'data/members.json' is the correct path.
-    const url = 'data/members.json'; 
+    // IMPORTANT: Path to members.json is now an absolute path relative to your GitHub Pages repository root.
+    // This assumes your GitHub Pages URL is like: https://nyantakyi-francis.github.io/wdd231/
+    // And your members.json is located at: wdd231/chamber/data/members.json
+    const url = '/wdd231/chamber/data/members.json'; 
     const memberDisplay = document.getElementById('member-display');
     const gridViewBtn = document.getElementById('grid-view-btn');
     const listViewBtn = document.getElementById('list-view-btn');
@@ -95,11 +95,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Only display image in grid view
             if (viewType === 'grid') {
                 const logo = document.createElement('img');
-                // IMPORTANT: This path is relative to directory.html
-                // If member logos are in 'wdd231/images/', use `../images/${member.imagefilename}`
-                // If member logos are in 'wdd231/chamber/images/', use `images/${member.imagefilename}`
-                // Based on your directory.html, the main logo is '../images/my-logo.png', so assuming member logos are there too.
-                logo.src = `../images/${member.imagefilename}`; 
+                // IMPORTANT: Changed image path to be absolute from the GitHub Pages repository root.
+                // This path is relative to the domain root (e.g., https://nyantakyi-francis.github.io/)
+                // and includes your repository name 'wdd231'.
+                logo.src = `/wdd231/images/${member.imagefilename}`; 
                 logo.alt = `${member.name} Logo`;
                 logo.loading = 'lazy';
                 logo.width = 150; // Set a default width for grid view
