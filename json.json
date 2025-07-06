@@ -1,0 +1,76 @@
+[
+  {
+    "familyName": "Osei",
+    "movedInDate": "2024-03-10",
+    "numberOfPeople": 3,
+    "visitedByBishopric": true,
+    "members": [
+      {
+        "name": "Kwame Osei",
+        "gender": "Male",
+        "birthdate": "1985-07-20"
+      },
+      {
+        "name": "Ama Osei",
+        "gender": "Female",
+        "birthdate": "1987-11-05"
+      },
+      {
+        "name": "Adwoa Osei",
+        "gender": "Female",
+        "birthdate": "2018-04-12"
+      }
+    ]
+  },
+  {
+    "familyName": "Mensah",
+    "movedInDate": "2023-11-22",
+    "numberOfPeople": 2,
+    "visitedByBishopric": false,
+    "members": [
+      {
+        "name": "Kofi Mensah",
+        "gender": "Male",
+        "birthdate": "1990-02-28"
+      },
+      {
+        "name": "Akua Mensah",
+        "gender": "Female",
+        "birthdate": "1991-09-17"
+      }
+    ]
+  },
+  {
+    "familyName": "Boakye",
+    "movedInDate": "2024-01-01",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "members": [
+      {
+        "name": "Nana Boakye",
+        "gender": "Female",
+        "birthdate": "1975-06-01"
+      },
+      {
+        "name": "Kwabena Boakye",
+        "gender": "Male",
+        "birthdate": "1973-03-15"
+      },
+      {
+        "name": "Yaa Boakye",
+        "gender": "Female",
+        "birthdate": "2000-10-25"
+      },
+      {
+        "name": "Yaw Boakye",
+        "gender": "Male",
+        "birthdate": "2005-01-30"
+      },
+      {
+        "name": "Afia Boakye",
+        "gender": "Female",
+        "birthdate": "2010-08-08"
+      }
+    ]
+  }
+]

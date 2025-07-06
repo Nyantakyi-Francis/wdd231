@@ -1,0 +1,217 @@
+/* General Site-Wide Styles */
+:root {
+    --primary-color: #34495e; /* Dark Blue/Gray */
+    --secondary-color: #2c3e50; /* Even Darker Blue/Gray */
+    --accent-color: #e67e22; /* Orange */
+    --light-bg-color: #f4f7f6; /* Light Gray */
+    --text-color: #333;
+    --light-text-color: #ecf0f1;
+    --border-color: #ddd;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+/* Header Styles */
+.site-header {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.site-branding {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chamber-logo {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+    border-radius: 50%; /* Example: if it's a circular logo */
+}
+
+.site-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+/* Navigation Styles */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    color: var(--light-text-color);
+    font-weight: 400;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.current-page {
+    color: var(--accent-color);
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger-menu {
+    display: none; /* Hidden by default on desktop */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.hamburger-menu .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--light-text-color);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mobile Navigation Toggle */
+@media (max-width: 768px) {
+    .hamburger-menu {
+        display: flex; /* Show hamburger on mobile */
+    }
+
+    .main-nav {
+        display: none; /* Hide nav by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: var(--secondary-color);
+        position: absolute;
+        top: 70px; /* Adjust based on header height */
+        left: 0;
+        padding: 1rem 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        z-index: 999;
+    }
+
+    .main-nav.open {
+        display: flex; /* Show nav when open */
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .main-nav a {
+        padding: 0.8rem 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Hamburger animation */
+    .hamburger-menu.open .bar:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+    .hamburger-menu.open .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger-menu.open .bar:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+}
+
+/* Main Content Area */
+main.main-directory-content {
+    flex: 1; /* Allows main content to grow */
+    padding: 2rem 1rem;
+}
+
+.page-title {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: var(--secondary-color);
+    color: var(--light-text-color);
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: auto; /* Pushes footer to the bottom */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-content h3 {
+    color: var(--accent-color);
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.footer-content p {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+}
+
+.social-media-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-media-links img {
+    width: 30px; /* Size for social media icons */
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.social-media-links img:hover {
+    transform: scale(1.1);
+}
+
+.developer-info {
+    text-align: center;
+    margin-top: 1rem;
+    width: 100%; /* Take full width on smaller screens */
+}
+
+@media (min-width: 769px) {
+    .developer-info {
+        width: auto; /* Allow items to align side-by-side on larger screens */
+    }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Timbuktu Artisans Guild",
+    "address": "123 Craftsmanship Alley, Timbuktu",
+    "phone": "223-555-1001",
+    "websiteurl": "https://www.timbuktuartisans.org",
+    "imagefilename": "logo-artisans.png",
+    "membershiplevel": 3,
+    "otherinfo": "Promoting local arts and crafts."
+  },
+  {
+    "name": "Desert Oasis Cafe",
+    "address": "456 Spice Market Road, Timbuktu",
+    "phone": "223-555-1002",
+    "websiteurl": "https://www.desertoasiscafe.com",
+    "imagefilename": "logo-cafe.png",
+    "membershiplevel": 2,
+    "otherinfo": "Finest local cuisine and traditional music."
+  },
+  {
+    "name": "Sahara Logistics Solutions",
+    "address": "789 Trade Route Blvd, Timbuktu",
+    "phone": "223-555-1003",
+    "websiteurl": "https://www.saharalogistics.ml",
+    "imagefilename": "logo-logistics.png",
+    "membershiplevel": 3,
+    "otherinfo": "Reliable cargo and transport services across the region."
+  },
+  {
+    "name": "Ancient Scrolls Bookstore",
+    "address": "101 Wisdom Lane, Timbuktu",
+    "phone": "223-555-1004",
+    "websiteurl": "https://www.ancientscrolls.org",
+    "imagefilename": "logo-bookstore.png",
+    "membershiplevel": 1,
+    "otherinfo": "Preserving and selling rare manuscripts."
+  },
+  {
+    "name": "Mali Textiles & Weavers",
+    "address": "202 Fabric Street, Timbuktu",
+    "phone": "223-555-1005",
+    "websiteurl": "https://www.malitextiles.com",
+    "imagefilename": "logo-textiles.png",
+    "membershiplevel": 2,
+    "otherinfo": "Handwoven fabrics and traditional garments."
+  },
+  {
+    "name": "Nomad's Rest Hotel",
+    "address": "303 Hospitality Avenue, Timbuktu",
+    "phone": "223-555-1006",
+    "websiteurl": "https://www.nomadsrest.ml",
+    "imagefilename": "logo-hotel.png",
+    "membershiplevel": 3,
+    "otherinfo": "Comfortable lodging for travelers."
+  },
+  {
+    "name": "Timbuktu Tech Hub",
+    "address": "404 Innovation Drive, Timbuktu",
+    "phone": "223-555-1007",
+    "websiteurl": "https://www.timbuktutech.org",
+    "imagefilename": "logo-techhub.png",
+    "membershiplevel": 1,
+    "otherinfo": "Fostering technological growth and startups."
+  },
+  {
+    "name": "Riverbend Fishing Co.",
+    "address": "505 Niger River Bank, Timbuktu",
+    "phone": "223-555-1008",
+    "websiteurl": "https://www.riverbendfish.com",
+    "imagefilename": "logo-fishing.png",
+    "membershiplevel": 1,
+    "otherinfo": "Fresh catch daily from the Niger River."
+  }
+]

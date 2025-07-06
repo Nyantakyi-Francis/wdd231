@@ -1,0 +1,171 @@
+/* Directory Page Specific Styles */
+
+/* View Toggle Buttons */
+.view-toggle {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.toggle-btn {
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    padding: 0.8rem 1.5rem;
+    margin: 0 5px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-btn:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+.toggle-btn.active {
+    background-color: var(--accent-color);
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Member Display Container */
+#member-display {
+    display: grid;
+    gap: 20px; /* Space between members */
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Grid View Specific Styles */
+.member-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid columns */
+    justify-content: center;
+    align-items: stretch; /* Ensure cards stretch to equal height */
+}
+
+.member-grid .member-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.member-grid .member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.member-grid .member-card h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.member-grid .member-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+.member-grid .member-card .member-logo {
+    width: 100%;
+    max-width: 150px; /* Max width for logos in grid view */
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain; /* Ensures logo fits without cropping */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.member-grid .member-card .website-link {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* List View Specific Styles */
+.member-list {
+    grid-template-columns: 1fr; /* Single column for list view */
+}
+
+.member-list .member-card {
+    background-color: #fff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    text-align: left;
+    transition: background-color 0.2s ease;
+}
+
+.member-list .member-card:hover {
+    background-color: #f9f9f9;
+}
+
+.member-list .member-card h2 {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+.member-list .member-card p {
+    font-size: 0.9rem;
+    color: #444;
+    margin: 3px 0;
+}
+
+.member-list .member-card .member-logo {
+    display: none; /* Hide images in list view */
+}
+
+.member-list .member-card .website-link {
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+    .toggle-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+    .member-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .member-grid .member-card h2 {
+        font-size: 1.3rem;
+    }
+    .member-list .member-card h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title {
+        font-size: 1.8rem;
+    }
+    .toggle-btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+    #member-display {
+        padding: 0.5rem;
+    }
+}
