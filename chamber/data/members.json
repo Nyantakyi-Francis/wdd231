@@ -1,74 +1,74 @@
 [
   {
-    "name": "Timbuktu Artisans Guild",
-    "address": "123 Craftsmanship Alley, Timbuktu",
-    "phone": "223-555-1001",
-    "websiteurl": "https://www.timbuktuartisans.org",
-    "imagefilename": "logo-artisans.png",
+    "name": "Accra Digital Hub",
+    "address": "Spintex Road, Accra",
+    "phone": "+233 24 123 4567",
+    "websiteurl": "https://www.accradigitalhub.com",
+    "imagefilename": "accra.jpeg",
     "membershiplevel": 3,
-    "otherinfo": "Promoting local arts and crafts."
+    "otherinfo": "Leading tech innovation and co-working space."
   },
   {
-    "name": "Desert Oasis Cafe",
-    "address": "456 Spice Market Road, Timbuktu",
-    "phone": "223-555-1002",
-    "websiteurl": "https://www.desertoasiscafe.com",
-    "imagefilename": "logo-cafe.png",
+    "name": "Gold Coast Textiles",
+    "address": "Kumasi Central Market, Kumasi",
+    "phone": "+233 50 987 6543",
+    "websiteurl": "https://www.goldcoasttextiles.com",
+    "imagefilename": "gold.jpeg",
     "membershiplevel": 2,
-    "otherinfo": "Finest local cuisine and traditional music."
+    "otherinfo": "Authentic Ghanaian fabrics and bespoke designs."
   },
   {
-    "name": "Sahara Logistics Solutions",
-    "address": "789 Trade Route Blvd, Timbuktu",
-    "phone": "223-555-1003",
-    "websiteurl": "https://www.saharalogistics.ml",
-    "imagefilename": "logo-logistics.png",
+    "name": "Volta River Logistics",
+    "address": "Tema Port Road, Tema",
+    "phone": "+233 30 210 9876",
+    "websiteurl": "https://www.voltariverlogistics.com",
+    "imagefilename": "volta.jpeg",
     "membershiplevel": 3,
-    "otherinfo": "Reliable cargo and transport services across the region."
+    "otherinfo": "Efficient freight and supply chain solutions."
   },
   {
-    "name": "Ancient Scrolls Bookstore",
-    "address": "101 Wisdom Lane, Timbuktu",
-    "phone": "223-555-1004",
-    "websiteurl": "https://www.ancientscrolls.org",
-    "imagefilename": "logo-bookstore.png",
+    "name": "Kwame Nkrumah Bookstore",
+    "address": "University Avenue, Legon, Accra",
+    "phone": "+233 20 543 2109",
+    "websiteurl": "https://www.kwamenkrumahbooks.com",
+    "imagefilename": "kwame.jpeg",
     "membershiplevel": 1,
-    "otherinfo": "Preserving and selling rare manuscripts."
+    "otherinfo": "Academic and cultural literature."
   },
   {
-    "name": "Mali Textiles & Weavers",
-    "address": "202 Fabric Street, Timbuktu",
-    "phone": "223-555-1005",
-    "websiteurl": "https://www.malitextiles.com",
-    "imagefilename": "logo-textiles.png",
+    "name": "Asaase Farms & Produce",
+    "address": "Aburi Hills, Eastern Region",
+    "phone": "+233 27 876 5432",
+    "websiteurl": "https://www.asaasefarms.com",
+    "imagefilename": "assase.jpeg",
     "membershiplevel": 2,
-    "otherinfo": "Handwoven fabrics and traditional garments."
+    "otherinfo": "Organic farm produce and agro-tourism."
   },
   {
-    "name": "Nomad's Rest Hotel",
-    "address": "303 Hospitality Avenue, Timbuktu",
-    "phone": "223-555-1006",
-    "websiteurl": "https://www.nomadsrest.ml",
-    "imagefilename": "logo-hotel.png",
+    "name": "Black Star Hospitality",
+    "address": "Labadi Beach Road, Accra",
+    "phone": "+233 26 345 6789",
+    "websiteurl": "https://www.blackstarhospitality.com",
+    "imagefilename": "black-star.jpeg",
     "membershiplevel": 3,
-    "otherinfo": "Comfortable lodging for travelers."
+    "otherinfo": "Luxury hotels and resorts across Ghana."
   },
   {
-    "name": "Timbuktu Tech Hub",
-    "address": "404 Innovation Drive, Timbuktu",
-    "phone": "223-555-1007",
-    "websiteurl": "https://www.timbuktutech.org",
-    "imagefilename": "logo-techhub.png",
+    "name": "Ghanaian Crafts Hub",
+    "address": "Osu Oxford Street, Accra",
+    "phone": "+233 55 112 2334",
+    "websiteurl": "https://www.ghanaiancraftshub.com",
+    "imagefilename": "crafts.jpeg",
     "membershiplevel": 1,
-    "otherinfo": "Fostering technological growth and startups."
+    "otherinfo": "Showcasing traditional Ghanaian artistry."
   },
   {
-    "name": "Riverbend Fishing Co.",
-    "address": "505 Niger River Bank, Timbuktu",
-    "phone": "223-555-1008",
-    "websiteurl": "https://www.riverbendfish.com",
-    "imagefilename": "logo-fishing.png",
+    "name": "Coastal Fisheries Co.",
+    "address": "Sekondi Fishing Harbour, Western Region",
+    "phone": "+233 24 567 8901",
+    "websiteurl": "https://www.coastalfisheries.com",
+    "imagefilename": "coastal.jpeg",
     "membershiplevel": 1,
-    "otherinfo": "Fresh catch daily from the Niger River."
+    "otherinfo": "Sustainable seafood sourcing and distribution."
   }
 ]

@@ -1,7 +1,10 @@
 // directory.js - Handles fetching and displaying member data, and view toggling
 
 document.addEventListener('DOMContentLoaded', () => {
-    const url = '/data/members.json'; // Path to your JSON file
+    // IMPORTANT: Ensure this path is correct relative to directory.js
+    // If directory.js is in 'wdd231/chamber/scripts/' and members.json is in 'wdd231/chamber/data/'
+    // then '../data/members.json' is the correct path.
+    const url = '../data/members.json'; 
     const memberDisplay = document.getElementById('member-display');
     const gridViewBtn = document.getElementById('grid-view-btn');
     const listViewBtn = document.getElementById('list-view-btn');
@@ -12,16 +15,29 @@ document.addEventListener('DOMContentLoaded', () => {
      * Fetches member data from the JSON file.
      */
     async function getMemberData() {
+        console.log("Attempting to fetch data from:", url); // Debugging: Check the URL being fetched
         try {
             const response = await fetch(url);
+            console.log("Fetch response received:", response); // Debugging: Check the raw response object
+            
             if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
+                // If response is not OK (e.g., 404 Not Found, 500 Server Error), throw an error
+                throw new Error(`HTTP error! status: ${response.status} - ${response.statusText || 'Unknown Error'}`);
             }
-            membersData = await response.json(); // Store data
+            
+            membersData = await response.json(); // Parse the JSON data
+            console.log("Data successfully parsed:", membersData); // Debugging: Check the parsed data array
+            
+            if (membersData.length === 0) {
+                memberDisplay.innerHTML = '<p class="info-message" style="text-align: center; color: #555;">No member data found in members.json.</p>';
+                return;
+            }
+
             displayMembers(membersData, 'grid'); // Display in grid view by default
         } catch (error) {
-            console.error("Error fetching member data:", error);
-            memberDisplay.innerHTML = '<p class="error-message">Failed to load member data. Please try again later.</p>';
+            console.error("Error fetching or parsing member data:", error);
+            // Display a user-friendly message on the page if data cannot be loaded
+            memberDisplay.innerHTML = '<p class="error-message" style="text-align: center; color: red; font-weight: bold;">Failed to load member data. Please check the browser console (F12) for error details. Ensure `members.json` exists, its path is correct, and it contains valid JSON.</p>';
         }
     }
 
@@ -31,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
      * @param {string} viewType - 'grid' or 'list'.
      */
     const displayMembers = (members, viewType) => {
+        console.log(`Displaying ${members.length} members in ${viewType} view.`); // Debugging: Confirm display call
         memberDisplay.innerHTML = ''; // Clear existing content
         memberDisplay.className = ''; // Clear existing classes
         memberDisplay.classList.add(viewType === 'grid' ? 'member-grid' : 'member-list');
@@ -78,14 +95,19 @@ document.addEventListener('DOMContentLoaded', () => {
             // Only display image in grid view
             if (viewType === 'grid') {
                 const logo = document.createElement('img');
-                logo.src = `images/${member.imagefilename}`; // Assuming images are in chamber/images/
+                // IMPORTANT: Adjust this path based on where your member logos are stored.
+                // If member logos are in 'wdd231/images/', use `../images/${member.imagefilename}`
+                // If member logos are in 'wdd231/chamber/images/', use `images/${member.imagefilename}`
+                // Based on your directory.html, the main logo is '../images/my-logo.png', so assuming member logos are there too.
+                logo.src = `../images/${member.imagefilename}`; 
                 logo.alt = `${member.name} Logo`;
                 logo.loading = 'lazy';
                 logo.width = 150; // Set a default width for grid view
                 logo.height = 150; // Set a default height for grid view
                 logo.classList.add('member-logo');
                 logo.onerror = function() { // Fallback for missing images
-                    this.onerror=null; // Prevent infinite loop
+                    console.warn(`Image failed to load: ${this.src}. Using placeholder.`);
+                    this.onerror=null; // Prevent infinite loop if placeholder also fails
                     this.src='https://placehold.co/150x150/cccccc/333333?text=No+Logo';
                     this.alt='No logo available';
                 };
