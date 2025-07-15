@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const WEATHER_API_KEY = '360debc3d41e2cdd47518becd29d2f04'; 
 const WEATHER_CITY = 'Ejisu'; // City for the chamber location
 const WEATHER_COUNTRY_CODE = 'GH'; // Country code for Ghana
-const WEATHER_UNITS = 'metric'; 
+const WEATHER_UNITS = 'metric'; // Use 'imperial' for Fahrenheit, 'metric' for Celsius
 
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${WEATHER_CITY},${WEATHER_COUNTRY_CODE}&units=${WEATHER_UNITS}&appid=${WEATHER_API_KEY}`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${WEATHER_CITY},${WEATHER_COUNTRY_CODE}&units=${WEATHER_UNITS}&appid=${WEATHER_API_KEY}`;
