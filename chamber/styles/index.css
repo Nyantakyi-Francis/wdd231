@@ -1,0 +1,244 @@
+/* index.css - Styles specific to the home page */
+
+/* Main content layout for larger screens (e.g., desktop) */
+.main-home-content {
+    display: grid;
+    grid-template-columns: 1fr; /* Default to single column for smaller screens */
+    gap: 20px;
+    padding: 1rem;
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the content */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    grid-column: 1 / -1; /* Spans full width */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    max-height: 400px; /* Limit hero image height */
+    object-fit: cover;
+    display: block;
+    filter: brightness(0.7); /* Darken image slightly for text readability */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007BFF; /* Example blue */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Sections Styling */
+.events-section,
+.weather-section,
+.spotlights-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* Events Section */
+.event-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 15px;
+}
+
+.event-card {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.event-card h3 {
+    color: #007BFF;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+/* Weather Section */
+.current-weather {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.current-weather p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+#weather-icon {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.forecast-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    text-align: center;
+}
+
+.forecast-day {
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.forecast-day p {
+    margin: 3px 0;
+}
+
+/* Company Spotlights */
+.spotlight-cards {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for mobile */
+    gap: 20px;
+}
+
+.spotlight-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.spotlight-card img {
+    max-width: 100px;
+    max-height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.spotlight-card h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.spotlight-card p {
+    font-size: 0.95em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.spotlight-card a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsive Layout */
+
+/* Medium screens (e.g., tablets) */
+@media (min-width: 600px) {
+    .main-home-content {
+        grid-template-columns: 1fr 1fr; /* Two columns */
+    }
+
+    .hero {
+        grid-column: 1 / -1; /* Hero still spans full width */
+    }
+
+    .events-section {
+        grid-column: 1 / -1; /* Events can span full width or adjust */
+    }
+
+    .spotlights-section {
+        grid-column: 1 / -1; /* Spotlights can span full width or adjust */
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust for more columns if needed */
+    }
+
+    .forecast-cards {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for forecast */
+    }
+}
+
+/* Large screens (e.g., desktops) */
+@media (min-width: 1000px) {
+    .main-home-content {
+        grid-template-columns: 2fr 1fr; /* Main content left, weather/events right */
+    }
+
+    .hero {
+        grid-column: 1 / -1; /* Hero spans full width */
+    }
+
+    .events-section {
+        grid-column: 1 / 2; /* Left column */
+    }
+
+    .weather-section {
+        grid-column: 2 / 3; /* Right column */
+        grid-row: 2; /* Position it below events if needed, or adjust grid-template-areas */
+    }
+
+    .spotlights-section {
+        grid-column: 1 / -1; /* Spotlights span full width at the bottom */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three columns for spotlights */
+    }
+
+    .event-cards {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the NYANTAKYI FRANCIS Chamber of Commerce. Promoting local businesses and community growth.">
+    <meta name="author" content="Nyantakyi Francis">
+    <title>Home | NYANTAKYI FRANCIS Chamber of Commerce</title>
+
+    <link rel="icon" href="../images/icon.ico"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Home | NYANTAKYI FRANCIS Chamber of Commerce">
+    <meta property="og:description" content="Welcome to the NYANTAKYI FRANCIS Chamber of Commerce. Promoting local businesses and community growth.">
+    
+    <meta property="og:image" content="https://nyantakyi-francis.github.io/wdd231/images/my-logo.png">
+ 
+    <meta property="og:url" content="https://nyantakyi-francis.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home | NYANTAKYI FRANCIS Chamber of Commerce">
+    <meta name="twitter:description" content="Welcome to the NYANTAKYI FRANCIS Chamber of Commerce. Promoting local businesses and community growth.">
+    
+    <meta name="twitter:image" content="https://nyantakyi-francis.github.io/wdd231/images/my-logo.png">
+
+    <link rel="stylesheet" href="../styles/normalize.css"> <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="styles/index.css"> </head>
+<body>
+    <header class="site-header">
+        <div class="header-content container">
+            <div class="site-branding">
+                <img src="../images/my-logo.png" alt="Chamber Logo" class="chamber-logo">
+                <span class="site-name">NYANTAKYI FRANCIS Chamber of Commerce</span>
+            </div>
+            <button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="main-nav" class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="current-page">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="directory.html">Business Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-home-content">
+        <section class="hero">
+            <picture>
+                <source srcset="../images/hero-large.webp" media="(min-width: 1000px)">
+                <source srcset="../images/hero-medium.webp" media="(min-width: 600px)">
+                <img src="../images/hero-small.webp" alt="Chamber of Commerce Hero Image" loading="lazy">
+            </picture>
+            <div class="hero-content">
+                <h1>Welcome to Our Chamber!</h1>
+                <p>Supporting local businesses and fostering community growth.</p>
+                <a href="#" class="cta-button">Join Our Chamber!</a>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <h2>Upcoming Events</h2>
+            <div class="event-cards">
+                <article class="event-card">
+                    <h3>Annual Business Expo</h3>
+                    <p>Date: October 26, 2024</p>
+                    <p>Time: 9:00 AM - 5:00 PM</p>
+                    <p>Location: Grand Convention Center</p>
+                    <p>Join us for a day of networking, workshops, and business opportunities.</p>
+                </article>
+                <article class="event-card">
+                    <h3>Chamber Luncheon</h3>
+                    <p>Date: November 15, 2024</p>
+                    <p>Time: 12:00 PM - 1:30 PM</p>
+                    <p>Location: The City Grill Restaurant</p>
+                    <p>Featuring a guest speaker on local economic trends.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="weather-section">
+            <h2>Current Weather in Ejisu</h2>
+            <div class="current-weather">
+                <p>Temperature: <span id="current-temp">--</span> &deg;C</p>
+                <p>Description: <span id="weather-desc">--</span></p>
+                <img id="weather-icon" src="" alt="Weather icon" style="display: none;">
+            </div>
+            <h3>3-Day Forecast</h3>
+            <div id="forecast-display" class="forecast-cards">
+                </div>
+        </section>
+
+        <section class="spotlights-section">
+            <h2>Member Spotlights</h2>
+            <div id="spotlights-display" class="spotlight-cards">
+                </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content container">
+            <div class="contact-info">
+                <h3>NYANTAKYI FRANCIS Chamber of Commerce</h3>
+                <p>Location: AE-0830-8158, Ejisu-Ashanti, Ghana</p>
+                <p>Email: nyantakyifrancis54@gmail.com</p>
+                <p>Phone: +233 595 715 528</p>
+            </div>
+            <div class="social-media-links">
+                <a href="#" aria-label="Facebook"><img src="../images/facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/nyantakyif67049?s=21" aria-label="Twitter"><img src="../images/x.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/in/nyantakyi-francis-603497278/" aria-label="LinkedIn"><img src="../images/linkdn.png" alt="LinkedIn"></a>
+            </div>
+            <div class="developer-info">
+                <p>&copy; <span id="currentyear"></span> NYANTAKYI FRANCIS Chamber of Commerce</p>
+                <p>WDD 231 Project | Nyantakyi Francis</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js" defer></script>
+    <script src="scripts/index.js" defer></script> </body>
+</html>
