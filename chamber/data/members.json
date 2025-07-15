@@ -4,7 +4,7 @@
     "address": "Spintex Road, Accra",
     "phone": "+233 24 123 4567",
     "websiteurl": "https://www.accradigitalhub.com",
-    "imagefilename": "accra.jpeg",
+    "imagefilename": "wdd231/images/accra.jpeg",
     "membershiplevel": 3,
     "otherinfo": "Leading tech innovation and co-working space."
   },
@@ -13,7 +13,7 @@
     "address": "Kumasi Central Market, Kumasi",
     "phone": "+233 50 987 6543",
     "websiteurl": "https://www.goldcoasttextiles.com",
-    "imagefilename": "gold.jpeg",
+    "imagefilename": "wdd231/images/gold.jpeg",
     "membershiplevel": 2,
     "otherinfo": "Authentic Ghanaian fabrics and bespoke designs."
   },
@@ -22,7 +22,7 @@
     "address": "Tema Port Road, Tema",
     "phone": "+233 30 210 9876",
     "websiteurl": "https://www.voltariverlogistics.com",
-    "imagefilename": "volta.jpeg",
+    "imagefilename": "wdd231/images/volta.jpeg",
     "membershiplevel": 3,
     "otherinfo": "Efficient freight and supply chain solutions."
   },
@@ -31,7 +31,7 @@
     "address": "University Avenue, Legon, Accra",
     "phone": "+233 20 543 2109",
     "websiteurl": "https://www.kwamenkrumahbooks.com",
-    "imagefilename": "kwame.jpeg",
+    "imagefilename": "wdd231/images/kwame.jpeg",
     "membershiplevel": 1,
     "otherinfo": "Academic and cultural literature."
   },
@@ -40,7 +40,7 @@
     "address": "Aburi Hills, Eastern Region",
     "phone": "+233 27 876 5432",
     "websiteurl": "https://www.asaasefarms.com",
-    "imagefilename": "assase.jpeg",
+    "imagefilename": "wdd231/images/assase.jpeg",
     "membershiplevel": 2,
     "otherinfo": "Organic farm produce and agro-tourism."
   },
@@ -49,7 +49,7 @@
     "address": "Labadi Beach Road, Accra",
     "phone": "+233 26 345 6789",
     "websiteurl": "https://www.blackstarhospitality.com",
-    "imagefilename": "black-star.jpeg",
+    "imagefilename": "wdd231/images/black-star.jpeg",
     "membershiplevel": 3,
     "otherinfo": "Luxury hotels and resorts across Ghana."
   },
@@ -58,7 +58,7 @@
     "address": "Osu Oxford Street, Accra",
     "phone": "+233 55 112 2334",
     "websiteurl": "https://www.ghanaiancraftshub.com",
-    "imagefilename": "crafts.jpeg",
+    "imagefilename": "wdd231/images/crafts.jpeg",
     "membershiplevel": 1,
     "otherinfo": "Showcasing traditional Ghanaian artistry."
   },
@@ -67,7 +67,7 @@
     "address": "Sekondi Fishing Harbour, Western Region",
     "phone": "+233 24 567 8901",
     "websiteurl": "https://www.coastalfisheries.com",
-    "imagefilename": "coastal.jpeg",
+    "imagefilename": "wdd231/images/coastal.jpeg",
     "membershiplevel": 1,
     "otherinfo": "Sustainable seafood sourcing and distribution."
   }
