@@ -1,6 +1,6 @@
 // scripts/index.js
 
-// Function to update current year and last modified date - keep this if it's in your main.js, otherwise add it here
+// Function to update current year and last modified date
 document.addEventListener('DOMContentLoaded', () => {
     const currentYearSpan = document.getElementById('currentyear');
     if (currentYearSpan) {
@@ -15,25 +15,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Weather API Integration
-const WEATHER_API_KEY = '17b2dcf07e0ffc4d8c02dd4b7f5b8015'; 
-const LATITUDE = '6.7163';
-const LONGITUDE = '-1.5009';
+const WEATHER_API_KEY = '360debc3d41e2cdd47518becd29d2f04'; // <--- !!! IMPORTANT: Replace with your actual API key !!!
+const WEATHER_CITY = 'Ejisu'; // City for the chamber location
+const WEATHER_COUNTRY_CODE = 'GH'; // Country code for Ghana
+const WEATHER_UNITS = 'metric'; // Use 'imperial' for Fahrenheit, 'metric' for Celsius
 
-const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${LATITUDE}&lon=${LONGITUDE}&appid=${WEATHER_API_KEY}`;
+const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${WEATHER_CITY},${WEATHER_COUNTRY_CODE}&units=${WEATHER_UNITS}&appid=${WEATHER_API_KEY}`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${WEATHER_CITY},${WEATHER_COUNTRY_CODE}&units=${WEATHER_UNITS}&appid=${WEATHER_API_KEY}`;
-
 
 async function getWeatherData() {
     try {
         // Fetch current weather
         const currentResponse = await fetch(currentWeatherUrl);
         const currentData = await currentResponse.json();
-        displayCurrentWeather(currentData);
+        // Check for API errors before displaying
+        if (currentData.cod && currentData.cod !== 200) {
+            console.error('OpenWeatherMap Current Weather API Error:', currentData.message);
+            document.getElementById('current-temp').textContent = 'N/A';
+            document.getElementById('weather-desc').textContent = `Error: ${currentData.message}`;
+        } else {
+            displayCurrentWeather(currentData);
+        }
+
 
         // Fetch 3-day forecast
         const forecastResponse = await fetch(forecastUrl);
         const forecastData = await forecastResponse.json();
-        displayForecast(forecastData);
+        // Check for API errors before displaying
+        if (forecastData.cod && forecastData.cod !== '200') { // forecast cod is a string
+            console.error('OpenWeatherMap Forecast API Error:', forecastData.message);
+            document.getElementById('forecast-display').innerHTML = '<p>Failed to load forecast.</p>';
+        } else {
+            displayForecast(forecastData);
+        }
 
     } catch (error) {
         console.error('Error fetching weather data:', error);
@@ -68,8 +82,6 @@ function displayForecast(data) {
     forecastDisplay.innerHTML = ''; // Clear previous forecast
 
     if (data.list) {
-        // OpenWeatherMap provides forecast data every 3 hours.
-        // We need to pick one entry per day for the next 3 days.
         const dailyForecasts = {};
         const today = new Date();
         today.setHours(0, 0, 0, 0);
@@ -78,17 +90,27 @@ function displayForecast(data) {
             const date = new Date(item.dt * 1000); // Convert timestamp to Date object
             date.setHours(0, 0, 0, 0); // Set to start of the day for comparison
 
+            // Only consider future days, up to 3 distinct days
             if (date > today && Object.keys(dailyForecasts).length < 3) {
                 const dateString = date.toISOString().split('T')[0];
-                if (!dailyForecasts[dateString]) {
-                    // Pick the forecast around midday (12:00 PM) for better representation
-                    // Or simply the first entry for that day if exact time is not crucial
+                // Prioritize a forecast around midday (12-15 PM) for each day if available
+                if (!dailyForecasts[dateString] || (date.getHours() >= 12 && date.getHours() < 15)) {
                     dailyForecasts[dateString] = item;
                 }
             }
         });
 
-        Object.values(dailyForecasts).forEach(item => {
+        // Ensure we have exactly 3 days if possible, by filling in earliest entries if midday not found
+        const sortedKeys = Object.keys(dailyForecasts).sort();
+        const finalForecasts = [];
+        for(let i = 0; i < 3; i++) {
+            if(sortedKeys[i]) {
+                finalForecasts.push(dailyForecasts[sortedKeys[i]]);
+            }
+        }
+
+
+        finalForecasts.forEach(item => {
             const date = new Date(item.dt * 1000);
             const day = date.toLocaleDateString('en-US', { weekday: 'short' });
             const temp = item.main.temp.toFixed(0);
@@ -121,7 +143,8 @@ getWeatherData();
 
 
 // Member Spotlights Integration
-const MEMBERS_DATA_URL = '/wdd231/chamber/data/members.json'; // Assuming your JSON data is here
+// Path is correct based on your structure: chamber/data/members.json
+const MEMBERS_DATA_URL = 'data/members.json'; 
 
 async function getMemberSpotlights() {
     try {
@@ -129,39 +152,44 @@ async function getMemberSpotlights() {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const members = await response.json();
-        displaySpotlights(members.companies); // Assuming your JSON has a 'companies' array
+        // No .companies property needed, as the JSON is a direct array
+        const members = await response.json(); 
+        displaySpotlights(members); 
     } catch (error) {
         console.error('Error fetching member data:', error);
         document.getElementById('spotlights-display').innerHTML = '<p>Failed to load member spotlights.</p>';
     }
 }
 
-function displaySpotlights(members) {
+// Renamed parameter to 'companies' for clarity, even though it's now a direct array
+function displaySpotlights(companies) { 
     const spotlightDisplay = document.getElementById('spotlights-display');
     spotlightDisplay.innerHTML = ''; // Clear previous spotlights
 
+    // Filter for membershiplevel 2 (Silver) or 3 (Gold) as per your JSON
     const goldSilverMembers = companies.filter(member =>
-        member.membershipLevel === 'Gold' || member.membershipLevel === 'Silver'
+        member.membershiplevel === 2 || member.membershiplevel === 3 
     );
 
     // Shuffle the array to get random members
     const shuffledMembers = goldSilverMembers.sort(() => 0.5 - Math.random());
 
-    // Select 2 or 3 members
-    const selectedMembers = shuffledMembers.slice(0, Math.floor(Math.random() * 2) + 2); // Randomly 2 or 3
+    // Select 2 or 3 members randomly
+    const selectedMembers = shuffledMembers.slice(0, Math.floor(Math.random() * 2) + 2); 
 
     selectedMembers.forEach(member => {
         const card = document.createElement('div');
         card.classList.add('spotlight-card');
 
+        // Use 'imagefilename' for logo and 'websiteurl' for website
+        // Corrected image path to go up two levels from index.js to wdd231/, then into images/
         card.innerHTML = `
-            ${member.logo ? `<img src="${member.logo}" alt="${member.name} Logo" loading="lazy">` : ''}
+            ${member.imagefilename ? `<img src="../../images/${member.imagefilename}" alt="${member.name} Logo" loading="lazy">` : ''}
             <h3>${member.name}</h3>
             <p>${member.address}</p>
             <p>${member.phone}</p>
-            <p><a href="${member.website}" target="_blank">${member.website.replace(/(^\w+:|^)\/\//, '')}</a></p>
-            <p>Membership: ${member.membershipLevel}</p>
+            <p><a href="${member.websiteurl}" target="_blank">${member.websiteurl.replace(/(^\w+:|^)\/\//, '')}</a></p>
+            <p>Membership Level: ${member.membershiplevel}</p>
         `;
         spotlightDisplay.appendChild(card);
     });
