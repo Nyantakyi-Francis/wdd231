@@ -15,13 +15,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // Weather API Integration
-const WEATHER_API_KEY = 'YOUR_OPENWEATHERMAP_API_KEY'; // Replace with your actual API key
-const WEATHER_CITY = 'Ejisu'; // Example city for the chamber location
-const WEATHER_COUNTRY_CODE = 'GH'; // Country code for Ghana
-const WEATHER_UNITS = 'metric'; // Use 'imperial' for Fahrenheit, 'metric' for Celsius
+const WEATHER_API_KEY = '17b2dcf07e0ffc4d8c02dd4b7f5b8015'; 
+const LATITUDE = '6.7163';
+const LONGITUDE = '-1.5009';
 
-const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${WEATHER_CITY},${WEATHER_COUNTRY_CODE}&units=${WEATHER_UNITS}&appid=${WEATHER_API_KEY}`;
+const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${LATITUDE}&lon=${LONGITUDE}&appid=${WEATHER_API_KEY}`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${WEATHER_CITY},${WEATHER_COUNTRY_CODE}&units=${WEATHER_UNITS}&appid=${WEATHER_API_KEY}`;
+
 
 async function getWeatherData() {
     try {
@@ -137,7 +137,7 @@ async function getMemberSpotlights() {
     }
 }
 
-function displaySpotlights(companies) {
+function displaySpotlights(members) {
     const spotlightDisplay = document.getElementById('spotlights-display');
     spotlightDisplay.innerHTML = ''; // Clear previous spotlights
 
