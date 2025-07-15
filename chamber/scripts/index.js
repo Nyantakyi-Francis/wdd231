@@ -1,5 +1,9 @@
 // scripts/index.js
 
+// Define the base URL for your GitHub Pages project
+// This ensures paths are always correct regardless of where the script is located
+const GITHUB_PAGES_BASE_URL = 'https://nyantakyi-francis.github.io/wdd231/';
+
 // Function to update current year and last modified date
 document.addEventListener('DOMContentLoaded', () => {
     const currentYearSpan = document.getElementById('currentyear');
@@ -18,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const WEATHER_API_KEY = '360debc3d41e2cdd47518becd29d2f04'; 
 const WEATHER_CITY = 'Ejisu'; // City for the chamber location
 const WEATHER_COUNTRY_CODE = 'GH'; // Country code for Ghana
-const WEATHER_UNITS = 'metric'; // Use 'imperial' for Fahrenheit, 'metric' for Celsius
+const WEATHER_UNITS = 'metric'; 
 
 const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${WEATHER_CITY},${WEATHER_COUNTRY_CODE}&units=${WEATHER_UNITS}&appid=${WEATHER_API_KEY}`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${WEATHER_CITY},${WEATHER_COUNTRY_CODE}&units=${WEATHER_UNITS}&appid=${WEATHER_API_KEY}`;
@@ -182,9 +186,9 @@ function displaySpotlights(companies) {
         card.classList.add('spotlight-card');
 
         // Use 'imagefilename' for logo and 'websiteurl' for website
-        // Corrected image path to go up two levels from index.js to wdd231/, then into images/
+        // !!! IMPORTANT: Updated image path to use GITHUB_PAGES_BASE_URL for absolute path !!!
         card.innerHTML = `
-            ${member.imagefilename ? `<img src="../../images/${member.imagefilename}" alt="${member.name} Logo" loading="lazy">` : ''}
+            ${member.imagefilename ? `<img src="${GITHUB_PAGES_BASE_URL}images/${member.imagefilename}" alt="${member.name} Logo" loading="lazy">` : ''}
             <h3>${member.name}</h3>
             <p>${member.address}</p>
             <p>${member.phone}</p>
