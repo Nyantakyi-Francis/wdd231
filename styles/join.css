@@ -1,0 +1,255 @@
+/* chamber/styles/join.css */
+
+/* --- General Join Page Layout --- */
+.main-join-content {
+    display: grid;
+    gap: 2rem; /* Spacing between sections */
+    padding: 1rem;
+    max-width: 1200px; /* Max width for consistency */
+    margin: 0 auto; /* Center the main content */
+}
+
+/* --- Form Styling --- */
+.membership-form-section form {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.membership-form-section fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #fff;
+}
+
+.membership-form-section legend {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    padding: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.membership-form-section label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    color: #555;
+}
+
+.membership-form-section input[type="text"],
+.membership-form-section input[type="email"],
+.membership-form-section input[type="tel"],
+.membership-form-section textarea {
+    width: calc(100% - 20px); /* Account for padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-sizing: border-box; /* Include padding in width */
+    font-size: 1rem;
+}
+
+.membership-form-section textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 80px;
+}
+
+.membership-options label {
+    display: flex; /* Use flex to align radio button and text */
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-weight: normal; /* Override bold from general label */
+}
+
+.membership-options input[type="radio"] {
+    margin-right: 10px;
+    transform: scale(1.2); /* Make radio buttons slightly larger */
+}
+
+.membership-form-section input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007bff; /* Blue submit button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.membership-form-section input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* --- Membership Benefits Section --- */
+.membership-benefits-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid for cards */
+    gap: 1.5rem;
+}
+
+.membership-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Initial state for animation */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 0.8s forwards; /* Animation name, duration, fill-mode */
+}
+
+/* Delay for each card for staggered animation */
+.membership-card:nth-child(1) { animation-delay: 0.1s; }
+.membership-card:nth-child(2) { animation-delay: 0.3s; }
+.membership-card:nth-child(3) { animation-delay: 0.5s; }
+.membership-card:nth-child(4) { animation-delay: 0.7s; }
+
+
+.membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.membership-card h3 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+    font-size: 1.4em;
+}
+
+.membership-card p {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+}
+
+.benefits-button {
+    background-color: #28a745; /* Green button for Learn More */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95em;
+    transition: background-color 0.3s ease;
+}
+
+.benefits-button:hover {
+    background-color: #218838;
+}
+
+/* --- Responsive Layout for Larger Screens --- */
+@media (min-width: 768px) {
+    .main-join-content {
+        grid-template-columns: 2fr 1fr; /* Form takes 2/3, cards take 1/3 */
+    }
+
+    .membership-form-section {
+        grid-column: 1 / 2; /* Form on the left */
+    }
+
+    .membership-benefits-section {
+        grid-column: 2 / 3; /* Benefits on the right */
+        align-self: start; /* Align to the top of its grid area */
+        position: sticky; /* Makes it stick when scrolling */
+        top: 20px; /* Distance from the top */
+    }
+
+    .membership-benefits-section h2 {
+        text-align: left; /* Align title left when beside form */
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr; /* Stack cards vertically on the right */
+    }
+}
+
+/* --- Animation for Membership Cards --- */
+@keyframes fadeInSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Modals (basic styling, will be enhanced by JS) --- */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 80%; /* Could be adjusted */
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    position: relative;
+    animation: fadeIn 0.3s ease-out; /* Simple fade-in animation */
+}
+
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Fade In Animation for Modals */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Fade Out Animation for Modals (will be added via JS) */
+.modal-closing {
+    animation: fadeOut 0.3s ease-in forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

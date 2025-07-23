@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the NYANTAKYI FRANCIS Chamber of Commerce.">
+    <meta name="author" content="Nyantakyi Francis">
+    <title>Join Us | NYANTAKYI FRANCIS Chamber of Commerce</title>
+
+    <link rel="icon" href="../images/icon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Join Us | NYANTAKYI FRANCIS Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the NYANTAKYI FRANCIS Chamber of Commerce.">
+    <meta property="og:image" content="https://nyantakyi-francis.github.io/wdd231/images/my-logo.png">
+    <meta property="og:url" content="https://nyantakyi-francis.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Join Us | NYANTAKYI FRANCIS Chamber of Commerce">
+    <meta name="twitter:description" content="Become a member of the NYANTAKYI FRANCIS Chamber of Commerce.">
+    <meta name="twitter:image" content="https://nyantakyi-francis.github.io/wdd231/images/my-logo.png">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="styles/join.css"> </head>
+<body>
+    <header class="site-header">
+        <div class="header-content container">
+            <div class="site-branding">
+                <img src="../images/my-logo.png" alt="Chamber Logo" class="chamber-logo">
+                <span class="site-name">NYANTAKYI FRANCIS Chamber of Commerce</span>
+            </div>
+            <button id="hamburger-menu" class="hamburger-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav id="main-nav" class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="directory.html">Business Directory</a></li>
+                    <li><a href="join.html" class="current-page">Join</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-join-content">
+        <h1>Join Our Chamber</h1>
+        <section class="membership-form-section">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label>First Name*
+                        <input type="text" id="fname" name="fname" required title="First Name" autocomplete="given-name">
+                    </label>
+                    <label>Last Name*
+                        <input type="text" id="lname" name="lname" required title="Last Name" autocomplete="family-name">
+                    </label>
+                    <label>Organization Title*
+                        <input type="text" id="orgtitle" name="orgtitle" required title="Your organizational title" autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}" placeholder="e.g., CEO, Manager">
+                    </label>
+                    <label>Email*
+                        <input type="email" id="email" name="email" required title="Email Address" autocomplete="email" placeholder="name@example.com">
+                    </label>
+                    <label>Mobile Phone*
+                        <input type="tel" id="phone" name="phone" required title="Mobile Phone Number" autocomplete="tel">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label>Business/Organization Name*
+                        <input type="text" id="bizname" name="bizname" required title="Business or Organization Name" autocomplete="organization">
+                    </label>
+                    <label>Business Description
+                        <textarea id="bizdesc" name="bizdesc" title="Describe your business or organization" rows="5"></textarea>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <div class="membership-options">
+                        <label><input type="radio" name="membership" value="NP"> NP Membership (No Fee)</label>
+                        <label><input type="radio" name="membership" value="Bronze"> Bronze Membership</label>
+                        <label><input type="radio" name="membership" value="Silver"> Silver Membership</label>
+                        <label><input type="radio" name="membership" value="Gold"> Gold Membership</label>
+                    </div>
+                </fieldset>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Join the Chamber">
+            </form>
+        </section>
+
+        <section class="membership-benefits-section">
+            <h2>Membership Benefits</h2>
+            <div class="membership-cards">
+                <div class="membership-card" id="np-membership">
+                    <h3>NP Membership</h3>
+                    <p>For non-profit organizations.</p>
+                    <button class="benefits-button" data-modal="modal-np">Learn More</button>
+                </div>
+                <div class="membership-card" id="bronze-membership">
+                    <h3>Bronze Membership</h3>
+                    <p>Basic benefits for small businesses.</p>
+                    <button class="benefits-button" data-modal="modal-bronze">Learn More</button>
+                </div>
+                <div class="membership-card" id="silver-membership">
+                    <h3>Silver Membership</h3>
+                    <p>Enhanced benefits for growing businesses.</p>
+                    <button class="benefits-button" data-modal="modal-silver">Learn More</button>
+                </div>
+                <div class="membership-card" id="gold-membership">
+                    <h3>Gold Membership</h3>
+                    <p>Premium benefits for established businesses.</p>
+                    <button class="benefits-button" data-modal="modal-gold">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="modal-np" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>NP Membership Benefits</h3>
+            <p>This membership is exclusively for non-profit organizations and comes with no annual fee. Benefits include:</p>
+            <ul>
+                <li>Basic listing in the Business Directory.</li>
+                <li>Access to community events.</li>
+                <li>Monthly newsletter updates.</li>
+                <li>Opportunities for local networking.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-bronze" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Bronze Membership Benefits</h3>
+            <p>Our Bronze tier offers fundamental support for small businesses. Benefits include:</p>
+            <ul>
+                <li>Enhanced listing in the Business Directory.</li>
+                <li>Invitations to exclusive Bronze-level networking events.</li>
+                <li>Discounted rates on chamber workshops and training sessions.</li>
+                <li>Access to basic business resources.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-silver" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Silver Membership Benefits</h3>
+            <p>Designed for growing businesses, the Silver membership provides significant advantages. Benefits include:</p>
+            <ul>
+                <li>Prominent listing in the Business Directory with logo inclusion.</li>
+                <li>Priority invitations to all networking events.</li>
+                <li>Free access to select business development workshops.</li>
+                <li>Opportunities for local advertising in chamber publications.</li>
+                <li>Eligibility for "Member Spotlight" features on the home page (random selection).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-gold" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h3>Gold Membership Benefits</h3>
+            <p>Our premium Gold tier offers comprehensive benefits for established businesses seeking maximum visibility and support. Benefits include:</p>
+            <ul>
+                <li>Top-tier, featured listing in the Business Directory with premium placement.</li>
+                <li>VIP access to all chamber events and exclusive leadership forums.</li>
+                <li>Complimentary access to all business development workshops and seminars.</li>
+                <li>Dedicated support for business advocacy and government liaison.</li>
+                <li>Guaranteed frequent "Member Spotlight" features on the home page.</li>
+                <li>Exclusive sponsorship opportunities for major chamber events.</li>
+            </ul>
+        </div>
+    </div>
+
+    ```
+
+
+
+    <footer class="site-footer">
+        <div class="footer-content container">
+            <div class="contact-info">
+                <h3>NYANTAKYI FRANCIS Chamber of Commerce</h3>
+                <p>Location: AE-0830-8158, Ejisu-Ashanti, Ghana</p>
+                <p>Email: nyantakyifrancis54@gmail.com</p>
+                <p>Phone: +233 595 715 528</p>
+            </div>
+            <div class="social-media-links">
+                <a href="#" aria-label="Facebook"><img src="../images/facebook.png" alt="Facebook"></a>
+                <a href="https://x.com/nyantakyif67049?s=21" aria-label="Twitter"><img src="../images/x.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/in/nyantakyi-francis-603497278/" aria-label="LinkedIn"><img src="../images/linkdn.png" alt="LinkedIn"></a>
+            </div>
+            <div class="developer-info">
+                <p>&copy; <span id="currentyear"></span> NYANTAKYI FRANCIS Chamber of Commerce</p>
+                <p>WDD 231 Project | Nyantakyi Francis</p>
+                <p>Last Modification: <span id="lastModified"></span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script> </body>
+</html>
