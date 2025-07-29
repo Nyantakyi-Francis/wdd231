@@ -1,0 +1,68 @@
+/* Custom CSS for Color Schema and Typography */
+/* Define your selected colors as CSS variables */
+:root {
+    --primary-color: #4A90E2; /* A vibrant blue for accents/headings */
+    --secondary-color: #F3F4F6; /* A light grey for background */
+    --text-color: #333333; /* Dark grey for body text */
+    --heading-color: #1A202C; /* Even darker grey for headings */
+    --wireframe-border: #9CA3AF; /* Grey for wireframe borders */
+    --wireframe-bg: #E5E7EB; /* Light grey for wireframe backgrounds */
+    --wireframe-element-bg: #D1D5DB; /* Slightly darker grey for elements */
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* Primary font for body */
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif; /* Headings also use Inter for simplicity as per instructions */
+    color: var(--heading-color);
+    margin-bottom: 0.5em;
+}
+
+/* Applying selected colors */
+.header-bg {
+    background-color: var(--primary-color);
+}
+.section-heading {
+    color: var(--primary-color);
+}
+.container-bg {
+    background-color: white;
+}
+.text-body {
+    color: var(--text-color);
+}
+
+/* Wireframe specific styles */
+.wireframe-container {
+    border: 2px solid var(--wireframe-border);
+    background-color: var(--wireframe-bg);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden; /* Ensures elements inside don't overflow rounded corners */
+}
+.wireframe-block {
+    background-color: var(--wireframe-element-bg);
+    border: 1px dashed var(--wireframe-border);
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 0.875rem; /* text-sm */
+    color: #4B5563; /* text-gray-700 */
+    border-radius: 0.25rem;
+}
+.wireframe-small-block {
+    background-color: var(--wireframe-element-bg);
+    border: 1px dashed var(--wireframe-border);
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+    font-size: 0.75rem; /* text-xs */
+    color: #4B5563; /* text-gray-700 */
+    border-radius: 0.25rem;
+}
