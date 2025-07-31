@@ -3,46 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Directory of members for the Chamber of Commerce. Find local businesses and their contact information.">
+    <meta name="description" content="Discover the vibrant community and businesses of the NYANTAKYI FRANCIS Chamber of Commerce.">
     <meta name="author" content="Nyantakyi Francis">
-    <title>Chamber Directory | NYANTAKYI FRANCIS Chamber of Commerce</title>
+    <title>Discover | NYANTAKYI FRANCIS Chamber of Commerce</title>
 
-    <!-- Favicon -->
-    <link rel="icon" href="../images/icon.ico"> 
+    <link rel="icon" href="../images/icon.ico">
 
-    <!-- Google Fonts - Inter for general text -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Open Graph / Facebook Meta Tags -->
-    <meta property="og:title" content="Chamber Directory | NYANTAKYI FRANCIS Chamber of Commerce">
-    <meta property="og:description" content="Directory of members for the Chamber of Commerce. Find local businesses and their contact information.">
-    
-   
+    <meta property="og:title" content="Discover | NYANTAKYI FRANCIS Chamber of Commerce">
+    <meta property="og:description" content="Explore attractions and businesses in our chamber area.">
     <meta property="og:image" content="https://nyantakyi-francis.github.io/wdd231/images/my-logo.png">
-  
-    <meta property="og:url" content="https://nyantakyi-francis.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://nyantakyi-francis.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
-
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Chamber Directory | NYANTAKYI FRANCIS Chamber of Commerce">
-    <meta name="twitter:description" content="Directory of members for the Chamber of Commerce. Find local businesses and their contact information.">
-   
-    
+    <meta name="twitter:title" content="Discover | NYANTAKYI FRANCIS Chamber of Commerce">
+    <meta name="twitter:description" content="Explore attractions and businesses in our chamber area.">
     <meta name="twitter:image" content="https://nyantakyi-francis.github.io/wdd231/images/my-logo.png">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../styles/normalize.css"> <!-- Basic CSS reset -->
+    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="styles/directory.css">
-</head>
+    <link rel="stylesheet" href="styles/discover.css"> </head>
 <body>
     <header class="site-header">
         <div class="header-content container">
             <div class="site-branding">
-                <!-- Updated image filename: my-logo.png -->
                 <img src="../images/my-logo.png" alt="Chamber Logo" class="chamber-logo">
                 <span class="site-name">NYANTAKYI FRANCIS Chamber of Commerce</span>
             </div>
@@ -54,8 +42,8 @@
             <nav id="main-nav" class="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="discover.html">Discover</a></li>
-                    <li><a href="directory.html" class="current-page">Business Directory</a></li>
+                    <li><a href="discover.html" class="current-page">Discover</a></li>
+                    <li><a href="directory.html">Business Directory</a></li>
                     <li><a href="join.html">Join</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Events</a></li>
@@ -64,17 +52,17 @@
         </div>
     </header>
 
-    <main class="container main-directory-content">
-        <h1 class="page-title">Chamber Member Directory</h1>
+    <main class="container main-discover-content">
+        <h1>Discover Our Community</h1>
 
-        <div class="view-toggle">
-            <button id="grid-view-btn" class="toggle-btn active">Grid View</button>
-            <button id="list-view-btn" class="toggle-btn">List View</button>
-        </div>
+        <section class="sidebar-info">
+            <h2>Welcome!</h2>
+            <p id="last-visit-message">Loading visit information...</p>
+        </section>
 
-        <div id="member-display" class="member-grid">
-            <!-- Member cards will be dynamically loaded here by JavaScript -->
-        </div>
+        <section class="image-gallery">
+            <div id="cards-grid"></div>
+        </section>
     </main>
 
     <footer class="site-footer">
@@ -98,8 +86,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript files -->
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
-</body>
+    <script src="scripts/discover.js" defer></script> </body>
 </html>
