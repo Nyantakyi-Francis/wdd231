@@ -247,7 +247,7 @@
       "name": "Eren Yeager",
       "animeTitle": "Attack on Titan",
       "studio": "Wit Studio",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Eren+Yeager",
+      "image": "images/eren.jpeg",
       "description": "The main protagonist of Attack on Titan. A fierce and determined young man who is driven by the desire to exterminate the Titans after witnessing his mother's death."
     },
     {
@@ -255,7 +255,7 @@
       "name": "Izuku Midoriya",
       "animeTitle": "My Hero Academia",
       "studio": "Bones",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Izuku+Midoriya",
+      "image": "images/izuku.jpeg",
       "description": "The main protagonist of My Hero Academia. Originally born without a Quirk (superpower), he is chosen by the legendary hero All Might to be his successor."
     },
     {
@@ -263,7 +263,7 @@
       "name": "Monkey D. Luffy",
       "animeTitle": "One Piece",
       "studio": "Toei Animation",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Monkey+D.+Luffy",
+      "image": "images/luffy.jpg",
       "description": "The captain of the Straw Hat Pirates and the main protagonist of One Piece. His ultimate goal is to find the legendary treasure, the One Piece, and become the Pirate King."
     },
     {
@@ -271,7 +271,7 @@
       "name": "Goku",
       "animeTitle": "Dragon Ball Z",
       "studio": "Toei Animation",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Goku",
+      "image": "images/goku.webp",
       "description": "The main protagonist of the Dragon Ball series. A kind-hearted Saiyan warrior who protects Earth from evil."
     },
     {
@@ -279,7 +279,7 @@
       "name": "Light Yagami",
       "animeTitle": "Death Note",
       "studio": "Madhouse",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Light+Yagami",
+      "image": "images/light.jpeg",
       "description": "The main protagonist of Death Note. A brilliant high school student who finds the Death Note and attempts to create a new world by killing criminals."
     },
     {
@@ -287,7 +287,7 @@
       "name": "Spike Spiegel",
       "animeTitle": "Cowboy Bebop",
       "studio": "Sunrise",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Spike+Spiegel",
+      "image": "images/spike.jpg",
       "description": "A former member of a criminal syndicate, now a bounty hunter and main protagonist of Cowboy Bebop."
     },
     {
@@ -295,7 +295,7 @@
       "name": "Edward Elric",
       "animeTitle": "Fullmetal Alchemist: Brotherhood",
       "studio": "Bones",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Edward+Elric",
+      "image": "images/edward.jpeg",
       "description": "The main protagonist of Fullmetal Alchemist: Brotherhood. A young and talented alchemist in search of the Philosopher's Stone."
     },
     {
@@ -303,7 +303,7 @@
       "name": "Naruto Uzumaki",
       "animeTitle": "Naruto",
       "studio": "Studio Pierrot",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Naruto+Uzumaki",
+      "image": "images/naruto.jpeg",
       "description": "The main protagonist of Naruto. An energetic and boisterous ninja who strives to become the leader of his village."
     },
     {
@@ -311,7 +311,7 @@
       "name": "Chihiro Ogino",
       "animeTitle": "Spirited Away",
       "studio": "Studio Ghibli",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Chihiro+Ogino",
+      "image": "images/chihiro.jpeg",
       "description": "The main protagonist of the movie Spirited Away. She is a young, timid girl who finds herself working in a magical bathhouse for spirits."
     },
     {
@@ -319,7 +319,7 @@
       "name": "Tanjiro Kamado",
       "animeTitle": "Demon Slayer",
       "studio": "ufotable",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Tanjiro+Kamado",
+      "image": "images/tanjiro.webp",
       "description": "The main protagonist of Demon Slayer. A kind-hearted and determined boy who becomes a demon slayer to avenge his family."
     },
     {
@@ -327,7 +327,7 @@
       "name": "Gon Freecss",
       "animeTitle": "Hunter x Hunter",
       "studio": "Madhouse",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Gon+Freecss",
+      "image": "images/gon.jpeg",
       "description": "A young boy who leaves his home to become a professional Hunter and find his father. He is the main protagonist of Hunter x Hunter."
     },
     {
@@ -335,7 +335,7 @@
       "name": "Ken Kaneki",
       "animeTitle": "Tokyo Ghoul",
       "studio": "Studio Pierrot",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Ken+Kaneki",
+      "image": "images/ken.webp",
       "description": "The main protagonist of Tokyo Ghoul. After a near-fatal encounter, he is transformed into a half-Ghoul and must learn to survive in a world where humans and Ghouls are at war."
     },
     {
@@ -343,7 +343,7 @@
       "name": "Kirito",
       "animeTitle": "Sword Art Online",
       "studio": "A-1 Pictures",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Kirito",
+      "image": "images/kirito.webp",
       "description": "The main protagonist of Sword Art Online. A 'Solo Player' who is one of the most skilled fighters in the game and is determined to clear it to save himself and others."
     },
     {
@@ -351,7 +351,7 @@
       "name": "Saitama",
       "animeTitle": "One Punch Man",
       "studio": "Madhouse",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Saitama",
+      "image": "images/saitama.webp",
       "description": "The main protagonist of One Punch Man. A hero who is so powerful he can defeat any enemy with a single punch, leading to a profound sense of boredom and an existential crisis."
     },
     {
@@ -359,7 +359,7 @@
       "name": "Shigeo Kageyama",
       "animeTitle": "Mob Psycho 100",
       "studio": "Bones",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Shigeo+Kageyama",
+      "image": "images/shigeyo.jpeg",
       "description": "A psychic middle school student, known as 'Mob', who suppresses his emotions to keep his powers in check. He works for a self-proclaimed psychic to learn how to control his abilities."
     },
     {
@@ -367,7 +367,7 @@
       "name": "Shoyo Hinata",
       "animeTitle": "Haikyuu!!",
       "studio": "Production I.G",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Shoyo+Hinata",
+      "image": "images/shoyo.jpeg",
       "description": "The main protagonist of Haikyuu!!. A short but incredibly athletic and determined volleyball player who dreams of becoming a professional despite his height."
     },
     {
@@ -375,7 +375,7 @@
       "name": "Denji",
       "animeTitle": "Chainsaw Man",
       "studio": "MAPPA",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Denji",
+      "image": "images/denji.jpeg",
       "description": "The main protagonist of Chainsaw Man. A young man who, after a contract with his pet devil Pochita, is able to transform into the Chainsaw Man, a human-devil hybrid."
     },
     {
@@ -383,7 +383,7 @@
       "name": "Lelouch Lamperouge",
       "animeTitle": "Code Geass",
       "studio": "Sunrise",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Lelouch+Lamperouge",
+      "image": "images/lelouch.webp",
       "description": "The main protagonist of Code Geass. An exiled prince who gains a powerful ability known as 'Geass' and uses it to lead a rebellion against his former homeland."
     },
     {
@@ -391,7 +391,7 @@
       "name": "Satoru Fujinuma",
       "animeTitle": "Erased",
       "studio": "A-1 Pictures",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Satoru+Fujinuma",
+      "image": "images/fujinuma.jpeg",
       "description": "The main protagonist of Erased. A young man with the ability to travel back in time to prevent tragedies, he is sent back to his childhood to solve a series of murders."
     },
     {
@@ -399,7 +399,7 @@
       "name": "Subaru Natsuki",
       "animeTitle": "Re:Zero",
       "studio": "White Fox",
-      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Subaru+Natsuki",
+      "image": "images/subaru.webp",
       "description": "The main protagonist of Re:Zero. A Japanese high school student who is suddenly transported to another world and gains the unique ability to reset time after death."
     }
   ],
