@@ -1,0 +1,528 @@
+{
+  "animeList": [
+    {
+      "id": 1,
+      "title": "Attack on Titan",
+      "genre": "Action",
+      "year": 2013,
+      "image": "images/attack_on_titan.webp",
+      "description": "Humanity is on the brink of extinction as giant, man-eating creatures called Titans appear. A young boy named Eren Yeager vows to eliminate them all."
+    },
+    {
+      "id": 2,
+      "title": "My Hero Academia",
+      "genre": "Superhero",
+      "year": 2016,
+      "image": "images/my_hero.webp",
+      "description": "In a world where almost everyone has a superpower, a boy without one inherits the ability of the world's greatest hero and enrolls in a prestigious high school for heroes."
+    },
+    {
+      "id": 3,
+      "title": "Jujutsu Kaisen",
+      "genre": "Supernatural",
+      "year": 2020,
+      "image": "images/jujutsu.jpg",
+      "description": "A high school student swallows a cursed object to save a friend and becomes the host of a powerful Curse, entering the world of sorcerers."
+    },
+    {
+      "id": 4,
+      "title": "One Piece",
+      "genre": "Adventure",
+      "year": 1999,
+      "image": "images/one_piece.jpeg",
+      "description": "A young pirate, Monkey D. Luffy, travels with his crew on a quest to find the legendary treasure known as 'One Piece' and become the Pirate King."
+    },
+    {
+      "id": 5,
+      "title": "Demon Slayer",
+      "genre": "Fantasy",
+      "year": 2019,
+      "image": "images/demon_slayer.webp",
+      "description": "After his family is slaughtered and his sister is turned into a demon, a young boy named Tanjiro Kamado begins a perilous journey to become a demon slayer."
+    },
+    {
+      "id": 6,
+      "title": "Fullmetal Alchemist: Brotherhood",
+      "genre": "Fantasy",
+      "year": 2009,
+      "image": "images/full_metal.jpg",
+      "description": "Two brothers, Edward and Alphonse Elric, search for the Philosopher's Stone to restore their bodies after a failed alchemical experiment."
+    },
+    {
+      "id": 7,
+      "title": "Death Note",
+      "genre": "Psychological",
+      "year": 2006,
+      "image": "images/death_note.jpg",
+      "description": "A high school student finds a mysterious notebook that allows him to kill anyone by writing their name in it. He begins a secret crusade to rid the world of criminals."
+    },
+    {
+      "id": 8,
+      "title": "Cowboy Bebop",
+      "genre": "Sci-Fi",
+      "year": 1998,
+      "image": "images/cowboy_bebop.jpg",
+      "description": "A group of bounty hunters travels the solar system in the year 2071, chasing criminals and getting into trouble along the way."
+    },
+    {
+      "id": 9,
+      "title": "Dragon Ball Z",
+      "genre": "Action",
+      "year": 1989,
+      "image": "images/dragonball.jpeg",
+      "description": "The Z Fighters, led by Goku, defend Earth from an assortment of villains including aliens, androids, and magical beings."
+    },
+    {
+      "id": 10,
+      "title": "Naruto",
+      "genre": "Adventure",
+      "year": 2002,
+      "image": "images/naruto.jpg",
+      "description": "A young ninja, Naruto Uzumaki, seeks recognition from his peers and dreams of becoming the Hokage, the leader of his village."
+    },
+    {
+      "id": 11,
+      "title": "Sailor Moon",
+      "genre": "Magical Girl",
+      "year": 1992,
+      "image": "images/sailor_moon.jpg",
+      "description": "A clumsy teenage girl named Usagi Tsukino transforms into the warrior Sailor Moon to protect the Earth from evil forces."
+    },
+    {
+      "id": 12,
+      "title": "Neon Genesis Evangelion",
+      "genre": "Mecha",
+      "year": 1995,
+      "image": "images/neon.jpg",
+      "description": "In a post-apocalyptic world, teenage pilots are tasked with piloting giant bio-machines called Evangelions to fight monstrous beings known as Angels."
+    },
+    {
+      "id": 13,
+      "title": "Steins;Gate",
+      "genre": "Sci-Fi",
+      "year": 2011,
+      "image": "images/steins.jpg",
+      "description": "A group of students discovers a way to send messages to the past, altering the future and triggering a chain of events."
+    },
+    {
+      "id": 14,
+      "title": "Spirited Away",
+      "genre": "Fantasy",
+      "year": 2001,
+      "image": "images/spirited.jpg",
+      "description": "A young girl named Chihiro enters a magical world inhabited by spirits and must work to save her parents, who have been turned into pigs."
+    },
+    {
+      "id": 15,
+      "title": "Code Geass",
+      "genre": "Mecha",
+      "year": 2006,
+      "image": "images/code.jpg",
+      "description": "A brilliant high school student named Lelouch vi Britannia gains a powerful ability called Geass and leads a rebellion against a tyrannical empire."
+    },
+    {
+      "id": 16,
+      "title": "Hunter x Hunter",
+      "genre": "Adventure",
+      "year": 2011,
+      "image": "images/hunter.jpg",
+      "description": "A young boy named Gon Freecss discovers his father is a famous Hunter and embarks on a journey to become a Hunter himself."
+    },
+    {
+      "id": 17,
+      "title": "Tokyo Ghoul",
+      "genre": "Dark Fantasy",
+      "year": 2014,
+      "image": "images/tokyo.jpg",
+      "description": "A college student barely survives a deadly encounter with a Ghoul and is transformed into a half-Ghoul, a creature that can only survive by eating human flesh."
+    },
+    {
+      "id": 18,
+      "title": "Sword Art Online",
+      "genre": "Sci-Fi",
+      "year": 2012,
+      "image": "images/sword.jpg",
+      "description": "A massive multiplayer online role-playing game (MMORPG) called Sword Art Online is released, but players soon discover they cannot log out. To escape, they must clear all 100 floors of the game."
+    },
+    {
+      "id": 19,
+      "title": "One Punch Man",
+      "genre": "Superhero",
+      "year": 2015,
+      "image": "images/one.jpg",
+      "description": "A hero named Saitama, who can defeat any enemy with a single punch, struggles with boredom and the lack of a challenging fight."
+    },
+    {
+      "id": 20,
+      "title": "Mob Psycho 100",
+      "genre": "Supernatural",
+      "year": 2016,
+      "image": "images/mob.jpg",
+      "description": "A middle school boy named Shigeo Kageyama, nicknamed Mob, has powerful psychic abilities but lives a normal life to avoid losing control of his powers."
+    },
+    {
+      "id": 21,
+      "title": "A Silent Voice",
+      "genre": "Drama",
+      "year": 2016,
+      "image": "images/silent.jpg",
+      "description": "A high school boy who bullied a deaf girl in elementary school tries to make amends with her years later."
+    },
+    {
+      "id": 22,
+      "title": "Your Name",
+      "genre": "Romance",
+      "year": 2016,
+      "image": "images/your.jpg",
+      "description": "Two teenagers, a boy from Tokyo and a girl from a rural town, mysteriously begin to swap bodies."
+    },
+    {
+      "id": 23,
+      "title": "Weathering with You",
+      "genre": "Romance",
+      "year": 2019,
+      "image": "images/weathering.jpg",
+      "description": "A high school boy runs away to Tokyo and meets a girl who has the power to stop the rain and clear the sky."
+    },
+    {
+      "id": 24,
+      "title": "Fruits Basket",
+      "genre": "Romance",
+      "year": 2019,
+      "image": "images/fruits.jpg",
+      "description": "After her mother's death, an orphaned girl named Tohru Honda is taken in by the Soma family and learns their secret—members of the family are possessed by animals of the Chinese zodiac."
+    },
+    {
+      "id": 25,
+      "title": "Haikyuu!!",
+      "genre": "Sports",
+      "year": 2014,
+      "image": "images/hiakyu.jpg",
+      "description": "A short boy named Shoyo Hinata is inspired to become a volleyball player and joins his high school's team, aiming to become the best in Japan."
+    },
+    {
+      "id": 26,
+      "title": "Chainsaw Man",
+      "genre": "Dark Fantasy",
+      "year": 2022,
+      "image": "images/chain.jpg",
+      "description": "A young man with a debt to the Yakuza merges with his pet devil-dog to become Chainsaw Man, a human-devil hybrid."
+    },
+    {
+      "id": 27,
+      "title": "Spy × Family",
+      "genre": "Comedy",
+      "year": 2022,
+      "image": "images/spy.jpg",
+      "description": "A spy, an assassin, and a telepath girl form a fake family to fulfill a mission, all while hiding their true identities from each other."
+    },
+    {
+      "id": 28,
+      "title": "Vinland Saga",
+      "genre": "Historical",
+      "year": 2019,
+      "image": "images/vin.jpg",
+      "description": "A young boy named Thorfinn joins the mercenary band of a man who murdered his father, seeking revenge by challenging him to a duel."
+    },
+    {
+      "id": 29,
+      "title": "Erased",
+      "genre": "Mystery",
+      "year": 2016,
+      "image": "images/erased.jpg",
+      "description": "A young man with a unique ability to travel back in time to prevent tragic events is sent back to his childhood to solve a murder mystery."
+    },
+    {
+      "id": 30,
+      "title": "Re:Zero",
+      "genre": "Fantasy",
+      "year": 2016,
+      "image": "images/rezero.jpg",
+      "description": "A hikikomori boy is suddenly transported to another world and gains the ability to return from the dead, but only to a specific 'save point' in time."
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "name": "Eren Yeager",
+      "animeTitle": "Attack on Titan",
+      "studio": "Wit Studio",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Eren+Yeager",
+      "description": "The main protagonist of Attack on Titan. A fierce and determined young man who is driven by the desire to exterminate the Titans after witnessing his mother's death."
+    },
+    {
+      "id": 2,
+      "name": "Izuku Midoriya",
+      "animeTitle": "My Hero Academia",
+      "studio": "Bones",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Izuku+Midoriya",
+      "description": "The main protagonist of My Hero Academia. Originally born without a Quirk (superpower), he is chosen by the legendary hero All Might to be his successor."
+    },
+    {
+      "id": 3,
+      "name": "Monkey D. Luffy",
+      "animeTitle": "One Piece",
+      "studio": "Toei Animation",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Monkey+D.+Luffy",
+      "description": "The captain of the Straw Hat Pirates and the main protagonist of One Piece. His ultimate goal is to find the legendary treasure, the One Piece, and become the Pirate King."
+    },
+    {
+      "id": 4,
+      "name": "Goku",
+      "animeTitle": "Dragon Ball Z",
+      "studio": "Toei Animation",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Goku",
+      "description": "The main protagonist of the Dragon Ball series. A kind-hearted Saiyan warrior who protects Earth from evil."
+    },
+    {
+      "id": 5,
+      "name": "Light Yagami",
+      "animeTitle": "Death Note",
+      "studio": "Madhouse",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Light+Yagami",
+      "description": "The main protagonist of Death Note. A brilliant high school student who finds the Death Note and attempts to create a new world by killing criminals."
+    },
+    {
+      "id": 6,
+      "name": "Spike Spiegel",
+      "animeTitle": "Cowboy Bebop",
+      "studio": "Sunrise",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Spike+Spiegel",
+      "description": "A former member of a criminal syndicate, now a bounty hunter and main protagonist of Cowboy Bebop."
+    },
+    {
+      "id": 7,
+      "name": "Edward Elric",
+      "animeTitle": "Fullmetal Alchemist: Brotherhood",
+      "studio": "Bones",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Edward+Elric",
+      "description": "The main protagonist of Fullmetal Alchemist: Brotherhood. A young and talented alchemist in search of the Philosopher's Stone."
+    },
+    {
+      "id": 8,
+      "name": "Naruto Uzumaki",
+      "animeTitle": "Naruto",
+      "studio": "Studio Pierrot",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Naruto+Uzumaki",
+      "description": "The main protagonist of Naruto. An energetic and boisterous ninja who strives to become the leader of his village."
+    },
+    {
+      "id": 9,
+      "name": "Chihiro Ogino",
+      "animeTitle": "Spirited Away",
+      "studio": "Studio Ghibli",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Chihiro+Ogino",
+      "description": "The main protagonist of the movie Spirited Away. She is a young, timid girl who finds herself working in a magical bathhouse for spirits."
+    },
+    {
+      "id": 10,
+      "name": "Tanjiro Kamado",
+      "animeTitle": "Demon Slayer",
+      "studio": "ufotable",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Tanjiro+Kamado",
+      "description": "The main protagonist of Demon Slayer. A kind-hearted and determined boy who becomes a demon slayer to avenge his family."
+    },
+    {
+      "id": 11,
+      "name": "Gon Freecss",
+      "animeTitle": "Hunter x Hunter",
+      "studio": "Madhouse",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Gon+Freecss",
+      "description": "A young boy who leaves his home to become a professional Hunter and find his father. He is the main protagonist of Hunter x Hunter."
+    },
+    {
+      "id": 12,
+      "name": "Ken Kaneki",
+      "animeTitle": "Tokyo Ghoul",
+      "studio": "Studio Pierrot",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Ken+Kaneki",
+      "description": "The main protagonist of Tokyo Ghoul. After a near-fatal encounter, he is transformed into a half-Ghoul and must learn to survive in a world where humans and Ghouls are at war."
+    },
+    {
+      "id": 13,
+      "name": "Kirito",
+      "animeTitle": "Sword Art Online",
+      "studio": "A-1 Pictures",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Kirito",
+      "description": "The main protagonist of Sword Art Online. A 'Solo Player' who is one of the most skilled fighters in the game and is determined to clear it to save himself and others."
+    },
+    {
+      "id": 14,
+      "name": "Saitama",
+      "animeTitle": "One Punch Man",
+      "studio": "Madhouse",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Saitama",
+      "description": "The main protagonist of One Punch Man. A hero who is so powerful he can defeat any enemy with a single punch, leading to a profound sense of boredom and an existential crisis."
+    },
+    {
+      "id": 15,
+      "name": "Shigeo Kageyama",
+      "animeTitle": "Mob Psycho 100",
+      "studio": "Bones",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Shigeo+Kageyama",
+      "description": "A psychic middle school student, known as 'Mob', who suppresses his emotions to keep his powers in check. He works for a self-proclaimed psychic to learn how to control his abilities."
+    },
+    {
+      "id": 16,
+      "name": "Shoyo Hinata",
+      "animeTitle": "Haikyuu!!",
+      "studio": "Production I.G",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Shoyo+Hinata",
+      "description": "The main protagonist of Haikyuu!!. A short but incredibly athletic and determined volleyball player who dreams of becoming a professional despite his height."
+    },
+    {
+      "id": 17,
+      "name": "Denji",
+      "animeTitle": "Chainsaw Man",
+      "studio": "MAPPA",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Denji",
+      "description": "The main protagonist of Chainsaw Man. A young man who, after a contract with his pet devil Pochita, is able to transform into the Chainsaw Man, a human-devil hybrid."
+    },
+    {
+      "id": 18,
+      "name": "Lelouch Lamperouge",
+      "animeTitle": "Code Geass",
+      "studio": "Sunrise",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Lelouch+Lamperouge",
+      "description": "The main protagonist of Code Geass. An exiled prince who gains a powerful ability known as 'Geass' and uses it to lead a rebellion against his former homeland."
+    },
+    {
+      "id": 19,
+      "name": "Satoru Fujinuma",
+      "animeTitle": "Erased",
+      "studio": "A-1 Pictures",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Satoru+Fujinuma",
+      "description": "The main protagonist of Erased. A young man with the ability to travel back in time to prevent tragedies, he is sent back to his childhood to solve a series of murders."
+    },
+    {
+      "id": 20,
+      "name": "Subaru Natsuki",
+      "animeTitle": "Re:Zero",
+      "studio": "White Fox",
+      "image": "https://placehold.co/400x600/D1D5DB/4B5563?text=Subaru+Natsuki",
+      "description": "The main protagonist of Re:Zero. A Japanese high school student who is suddenly transported to another world and gains the unique ability to reset time after death."
+    }
+  ],
+  "studios": [
+    {
+      "id": 1,
+      "name": "Studio Ghibli",
+      "notableWorks": [
+        "Spirited Away",
+        "My Neighbor Totoro",
+        "Princess Mononoke"
+      ],
+      "description": "A world-renowned Japanese animation studio known for its high-quality, feature-length animated films. Many of its films have received critical acclaim and have been commercial successes."
+    },
+    {
+      "id": 2,
+      "name": "Kyoto Animation",
+      "notableWorks": [
+        "Violet Evergarden",
+        "A Silent Voice",
+        "K-On!"
+      ],
+      "description": "A Japanese animation studio recognized for its beautiful character designs, emotional storytelling, and high-quality production values."
+    },
+    {
+      "id": 3,
+      "name": "Bones",
+      "notableWorks": [
+        "Fullmetal Alchemist: Brotherhood",
+        "My Hero Academia",
+        "Mob Psycho 100"
+      ],
+      "description": "A prominent Japanese animation studio famous for its dynamic action sequences, detailed animation, and diverse range of genres."
+    },
+    {
+      "id": 4,
+      "name": "Wit Studio",
+      "notableWorks": [
+        "Attack on Titan",
+        "Vinland Saga",
+        "Spy × Family"
+      ],
+      "description": "A Japanese animation studio founded by former Production I.G producers. Known for its distinct art style and highly praised adaptations of popular manga."
+    },
+    {
+      "id": 5,
+      "name": "Toei Animation",
+      "notableWorks": [
+        "One Piece",
+        "Dragon Ball Z",
+        "Sailor Moon"
+      ],
+      "description": "One of the oldest and most well-known animation studios in Japan. It has produced numerous classic and long-running series that have gained international popularity."
+    },
+    {
+      "id": 6,
+      "name": "Madhouse",
+      "notableWorks": [
+        "Death Note",
+        "Hunter × Hunter",
+        "One-Punch Man"
+      ],
+      "description": "A Japanese animation studio celebrated for its high-quality animation, diverse genres, and often darker, more mature themes."
+    },
+    {
+      "id": 7,
+      "name": "ufotable",
+      "notableWorks": [
+        "Demon Slayer: Kimetsu no Yaiba",
+        "Fate/Zero",
+        "The Garden of Sinners"
+      ],
+      "description": "A Japanese animation studio widely acclaimed for its visually stunning animation, especially its use of digital effects and fluid action sequences."
+    },
+    {
+      "id": 8,
+      "name": "MAPPA",
+      "notableWorks": [
+        "Jujutsu Kaisen",
+        "Chainsaw Man",
+        "Vinland Saga (Season 2)"
+      ],
+      "description": "A Japanese animation studio that has risen to prominence for its high-quality animation and adaptations of popular manga series."
+    },
+    {
+      "id": 9,
+      "name": "A-1 Pictures",
+      "notableWorks": [
+        "Sword Art Online",
+        "Erased",
+        "Your Lie in April"
+      ],
+      "description": "A Japanese animation studio that has produced a wide range of popular series and films across various genres."
+    },
+    {
+      "id": 10,
+      "name": "White Fox",
+      "notableWorks": [
+        "Re:Zero - Starting Life in Another World",
+        "Steins;Gate",
+        "Akame ga Kill!"
+      ],
+      "description": "A Japanese animation studio known for producing well-regarded adaptations of light novels and manga with diverse themes."
+    },
+    {
+      "id": 11,
+      "name": "Sunrise",
+      "notableWorks": [
+        "Gundam series",
+        "Code Geass",
+        "Cowboy Bebop"
+      ],
+      "description": "A Japanese animation studio known for its mecha and sci-fi series, often praised for its detailed world-building and character development."
+    },
+    {
+      "id": 12,
+      "name": "Production I.G",
+      "notableWorks": [
+        "Haikyuu!!",
+        "Ghost in the Shell",
+        "Psycho-Pass"
+      ],
+      "description": "A Japanese animation studio with a reputation for high-quality animation and a diverse portfolio, including action, sci-fi, and sports anime."
+    }
+  ]
+}
