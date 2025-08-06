@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimeVerse | Reviews</title>
-    <!-- Inter font from Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>AnimeVerse | Community</title>
+    <meta name="description" content="Join the AnimeVerse community! Submit your anime reviews and discover featured animation studios.">
+    <meta name="author" content="Nyantakyi Francis">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nyantakyi-francis.github.io/wdd231/final_project/index.html">
+    <meta property="og:title" content="AnimeVerse | Community">
+    <meta property="og:description" content="Explore AnimeVerse, your ultimate fan site for anime and manga.">
+    <meta property="og:image" content="https://nyantakyi-francis.github.io/wdd231/final_project/images/luffy.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nyantakyi-francis.github.io/wdd231/final_project/index.html">
+    <meta property="twitter:title" content="AnimeVerse | Community">
+    <meta property="twitter:description" content="Explore AnimeVerse, your ultimate fan site for anime and manga.">
+    <meta property="twitter:image" content="https://nyantakyi-francis.github.io/wdd231/final_project/images/luffy.jpg">
+
     <!-- Link to our custom CSS file in the 'styles' folder -->
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- Placeholder for favicon -->
     <link rel="icon" type="image/x-icon" href="images/icon.ico">
 </head>
 <body>
     <!-- Header -->
     <header>
         <div class="container header-container">
-            <h1>AnimeVerse</h1>
+            <div class="site-logo">AnimeVerse</div>
             <!-- Navigation Links -->
             <nav>
                 <a href="index.html">Home</a>
-                <a href="anime.html">Anime</a>
-                <a href="character.html">Characters</a>
-                <a href="reviews.html" class="active">Reviews</a>
-                <a href="studio.html">Studios</a>
+                <a href="explore.html">Explore</a>
+                <a href="community.html" class="active">Community</a>
             </nav>
         </div>
     </header>
@@ -31,7 +41,8 @@
     <!-- Main Content -->
     <main class="container">
         <section class="card form-card">
-            <h2>Submit a Review</h2>
+            <h1>Submit a Review</h1>
+            <p>Share your thoughts on your favorite anime and manga series with the community!</p>
             <form id="review-form">
                 <div class="form-group">
                     <label for="anime-name">Anime/Manga Title:</label>
@@ -61,8 +72,16 @@
         
         <section class="card">
             <h2>Recent Reviews</h2>
-            <div id="reviews-list">
-                <p style="text-align: center; font-style: italic;">No reviews have been submitted yet.</p>
+            <div id="reviews-list" class="grid-container">
+                <p style="text-align: center; font-style: italic; width: 100%;">No reviews have been submitted yet.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Featured Studio</h2>
+            <p>Discover a randomly selected anime studio.</p>
+            <div id="studio-content" class="grid-container">
+                <p style="text-align: center; width: 100%;">Loading studio information...</p>
             </div>
         </section>
     </main>
@@ -70,13 +89,13 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; <span id="current-year"></span> WDD 231 Nyantakyi Francis' Final Project | All Rights Reserved</p>
+            <p>&copy; <span id="current-year"></span> WDD 231 Individual Project | All Rights Reserved</p>
             <p><a href="#" id="video-link">Project Video Link</a></p>
         </div>
     </footer>
 
     <!-- Link to the ES Module JavaScript file for this page -->
-    <script type="module" src="scripts/reviews.js"></script>
+    <script type="module" src="scripts/community.js"></script>
     <script type="module" src="scripts/main.js"></script>
 </body>
 </html>

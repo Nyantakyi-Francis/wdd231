@@ -2,7 +2,7 @@
 :root {
     --primary-color: #800080;
     --secondary-color: #F3F4F6;
-    --text-color: black;
+    --text-color: #222222; /* Changed from #333333 to a darker grey for better contrast */
     --heading-color: #1A202C;
     --accent-color: #60a5fa;
     --background-color: #f8fafc;
@@ -45,7 +45,8 @@ header {
     justify-content: space-between;
 }
 
-header h1 {
+/* Styling for the site logo/title in the header (no longer an h1) */
+.site-logo {
     font-size: 1.875rem; /* 30px */
     font-weight: 700;
     color: var(--primary-color);
@@ -85,12 +86,21 @@ main {
     text-align: center;
 }
 
-.card h2 {
+/* Main heading inside the card (now an h1) */
+.card h1 { /* Changed from h2 to h1 for the main page title */
     font-size: 2.25rem; /* 36px */
     font-weight: 700;
     color: var(--heading-color);
     margin-bottom: 1rem;
 }
+
+.card h2 { /* Existing h2 for sub-sections within cards */
+    font-size: 1.875rem; /* 30px */
+    font-weight: 700;
+    color: var(--heading-color);
+    margin-bottom: 1rem;
+}
+
 
 .card p {
     font-size: 1.125rem; /* 18px */
@@ -170,7 +180,7 @@ footer a:hover {
         flex-direction: row;
     }
 
-    header h1 {
+    .site-logo { /* No margin-bottom on desktop */
         margin-bottom: 0;
     }
 
@@ -187,7 +197,8 @@ footer a:hover {
 /* Page Specific Styles */
 #anime-list,
 #character-list,
-#studio-list {
+#studio-list, /* Keeping this in case you re-add a studio page */
+#reviews-list { /* Added for review display */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
@@ -410,11 +421,14 @@ footer a:hover {
         align-items: center;
         gap: 0.5rem;
     }
-    header h1 {
+    .site-logo { /* Font size adjustment for mobile */
         font-size: 1.5rem;
     }
-    .card h2 {
+    .card h1 { /* Font size adjustment for mobile */
         font-size: 2rem;
+    }
+    .card h2 { /* Font size adjustment for mobile */
+        font-size: 1.75rem;
     }
     .btn {
         width: 100%;

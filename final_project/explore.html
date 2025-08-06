@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnimeVerse | Home</title>
-    <meta name="description" content="Explore AnimeVerse, your ultimate fan site for anime and manga. Discover popular series, character spotlights, reviews, and studio information.">
+    <title>AnimeVerse | Explore</title>
+    <meta name="description" content="Explore the full list of anime series and characters on AnimeVerse. Dive into detailed information and discover new favorites.">
     <meta name="author" content="Nyantakyi Francis">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nyantakyi-francis.github.io/wdd231/final_project/index.html">
-    <meta property="og:title" content="AnimeVerse | Home">
+    <meta property="og:title" content="AnimeVerse | Explore">
     <meta property="og:description" content="Explore AnimeVerse, your ultimate fan site for anime and manga.">
     <meta property="og:image" content="https://nyantakyi-francis.github.io/wdd231/final_project/images/luffy.jpg">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://nyantakyi-francis.github.io/wdd231/final_project/index.html">
-    <meta property="twitter:title" content="AnimeVerse | Home">
+    <meta property="twitter:title" content="AnimeVerse | Explore">
     <meta property="twitter:description" content="Explore AnimeVerse, your ultimate fan site for anime and manga.">
     <meta property="twitter:image" content="https://nyantakyi-francis.github.io/wdd231/final_project/images/luffy.jpg">
 
@@ -31,8 +31,8 @@
             <div class="site-logo">AnimeVerse</div>
             <!-- Navigation Links -->
             <nav>
-                <a href="index.html" class="active">Home</a>
-                <a href="explore.html">Explore</a>
+                <a href="index.html">Home</a>
+                <a href="explore.html" class="active">Explore</a>
                 <a href="community.html">Community</a>
             </nav>
         </div>
@@ -41,51 +41,55 @@
     <!-- Main Content -->
     <main class="container">
         <section class="card">
-            <h1>Welcome to the Anime and Manga Showcase!</h1>
+            <h1>Explore Anime & Characters</h1>
             <p>
-                This project showcases a dynamic and responsive website, built with modern web technologies, to display information about various anime and manga series. Explore the site to learn about different titles, popular characters, and the studios behind them.
+                Toggle between our comprehensive lists of anime series and popular characters. Click on any item for more details.
             </p>
             <div class="button-container">
-                <a href="explore.html" class="btn btn-primary">
-                    Explore Content
-                </a>
-                <a href="community.html" class="btn btn-secondary">
-                    Join Community
-                </a>
+                <button id="show-anime-btn" class="btn btn-primary">Show Anime</button>
+                <button id="show-characters-btn" class="btn btn-secondary">Show Characters</button>
             </div>
         </section>
 
-        <section class="card">
-            <h2>Featured Anime</h2>
-            <div id="featured-anime-list" class="grid-container">
-                <!-- Featured anime will be loaded here by JavaScript -->
+        <!-- Anime List Section -->
+        <section id="anime-section" class="card content-section">
+            <h2>All Anime Series</h2>
+            <div id="anime-list" class="grid-container">
+                <!-- Anime data will be inserted here -->
             </div>
-            <p class="text-center mt-4">
-                <a href="explore.html#anime" class="btn btn-primary">View All Anime</a>
-            </p>
         </section>
 
-        <section class="card">
-            <h2>Featured Characters</h2>
-            <div id="featured-character-list" class="grid-container">
-                <!-- Featured characters will be loaded here by JavaScript -->
+        <!-- Character List Section (initially hidden) -->
+        <section id="character-section" class="card content-section" style="display: none;">
+            <h2>All Characters</h2>
+            <div id="character-list" class="grid-container">
+                <!-- Character data will be inserted here -->
             </div>
-            <p class="text-center mt-4">
-                <a href="explore.html#characters" class="btn btn-secondary">View All Characters</a>
-            </p>
         </section>
+
+        <!-- Modal for detailed information -->
+        <div id="detail-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-genre"></p>
+                <p id="modal-year"></p>
+                <p id="modal-studio"></p>
+                <p id="modal-description"></p>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; <span id="current-year"></span> WDD 231 Individual Project | All Rights Reserved</p>
-            <!-- Placeholder for video link as per project description -->
             <p><a href="#" id="video-link">Project Video Link</a></p>
         </div>
     </footer>
 
     <!-- Link to the ES Module JavaScript file for this page -->
+    <script type="module" src="scripts/explore.js"></script>
     <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
