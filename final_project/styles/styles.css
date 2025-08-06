@@ -1,8 +1,8 @@
 /* General Body and Page Layout */
 :root {
-    --primary-color: #4A90E2;
+    --primary-color: #e4fd02;
     --secondary-color: #F3F4F6;
-    --text-color: #333333;
+    --text-color: black;
     --heading-color: #1A202C;
     --accent-color: #60a5fa;
     --background-color: #f8fafc;
@@ -12,7 +12,7 @@
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
-    color: var(--text-color);
+    color: var(--text-color); /* This will now be darker */
     line-height: 1.6;
     margin: 0;
     min-height: 100vh;
@@ -53,7 +53,7 @@ header h1 {
 }
 
 header nav a {
-    color: var(--text-color);
+    color: var(--text-color); /* This will now be darker */
     font-weight: 600;
     text-decoration: none;
     transition: color 0.3s ease;
