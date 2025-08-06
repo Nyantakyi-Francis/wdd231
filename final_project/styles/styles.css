@@ -434,3 +434,9 @@ footer a:hover {
         width: 100%;
     }
 }
+
+
+.view-all-link {
+    text-align: center;
+    margin-top: 1rem;
+}

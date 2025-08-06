@@ -38,7 +38,7 @@ function loadAndDisplayReviews() {
             reviewsList.innerHTML += reviewCard; // Append to show newest first
         });
     } catch (error) {
-        console.error('Error loading reviews from local storage:', error);
+        // console.error('Error loading reviews from local storage:', error); // Removed console.error
         reviewsList.innerHTML = `<p style="text-align: center; color: red; width: 100%;">Error loading reviews.</p>`;
     }
 }
@@ -60,7 +60,7 @@ function handleReviewSubmission(event) {
 
     if (!animeName || !userName || !rating || !reviewText) {
         // This basic validation is usually handled by 'required' attribute, but good to have a JS fallback
-        console.warn('Please fill in all review fields.');
+        // console.warn('Please fill in all review fields.'); // Removed console.warn
         return;
     }
 
@@ -80,7 +80,7 @@ function handleReviewSubmission(event) {
         form.reset(); // Clear the form
         loadAndDisplayReviews(); // Reload reviews to show the new one
     } catch (error) {
-        console.error('Error saving review to local storage:', error);
+        // console.error('Error saving review to local storage:', error); // Removed console.error
         // Provide user feedback (e.g., a message on the page) if saving fails
     }
 }
@@ -126,7 +126,7 @@ async function loadStudioContent() {
             studioContent.innerHTML = `<p style="text-align: center; font-style: italic; width: 100%;">No studio data available.</p>`;
         }
     } catch (error) {
-        console.error('Failed to load studio data:', error);
+        // console.error('Failed to load studio data:', error); // Removed console.error
         studioContent.innerHTML = `<p style="text-align: center; color: red; width: 100%;">Failed to load studio data. Please try again later.</p>`;
     }
 }

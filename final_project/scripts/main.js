@@ -24,7 +24,7 @@ async function fetchData() {
         }
         return await response.json();
     } catch (error) {
-        console.error('Failed to fetch data:', error);
+        // console.error('Failed to fetch data:', error); // Removed console.error
         return null; // Return null on error
     }
 }
